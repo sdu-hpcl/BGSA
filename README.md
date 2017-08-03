@@ -1,2 +1,2 @@
 # BGSA
- A Bit-Parallel Global Sequence Alignment Toolkit for Multi-core and Many-core Architectures
+BGSA is a bit-parallel global sequence alignment toolkit for multi-core and many-core architectures. 
