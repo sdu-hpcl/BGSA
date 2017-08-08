@@ -1,0 +1,1 @@
+To build success, you need to use `-a knc-sse-none` parameter when generate the kernel source. 
