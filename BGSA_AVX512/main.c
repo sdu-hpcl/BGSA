@@ -74,11 +74,6 @@ void handle_args(int argc, char ** argv) {
 
 int main(int argc, char ** argv) {
 
-
-    file_query = "sample-data/query.txt";
-    file_database = "sample-data/subject.txt";
-    file_result = "data/bitpal_result.txt";
-
     handle_args(argc, argv);
 
     int i;

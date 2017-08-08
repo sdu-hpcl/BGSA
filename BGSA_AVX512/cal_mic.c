@@ -540,8 +540,6 @@ void cal_on_mic() {
     }
 
     printf("\n");
-    printf("AVX512: \n");
-    printf("Myers: \n" );
     printf("score is %d, %d, %d\n", match_score, mismatch_score, gap_score);
     printf("ref_len    is %d\n", ref_len);
     printf("ref_count  is %ld\n", ref_seq.count);

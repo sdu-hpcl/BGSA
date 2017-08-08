@@ -450,8 +450,6 @@ void cal_on_cpu() {
         total_temp += result_bucket_counts[i];
     }
     printf("\n");
-    printf("CPU: \n");
-    printf("Myers: \n");
     printf("score is %d, %d, %d\n", match_score, mismatch_score, gap_score);
     printf("read_total_time  is %.2fs\n", read_total_time);
     printf("write_total_time is %.2fs\n", write_total_time);
