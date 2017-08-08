@@ -20,7 +20,7 @@ BGSA is a bit-parallel global sequence alignment toolkit for multi-core and many
 	./aligner -q sample-data/query.txt -d sample-data/subject.txt -f data/result.txt
 	```
 
-* Step 4: Conver the result file to readable format.
+* Step 4: Convert the result file to readable format.
 	```
 	./convert -r data/result.txt
 	```
