@@ -1,0 +1,10 @@
+data/
+output/
+*.py
+*.pyc
+srcipts/
+tags
+*.sh
+.idea
+*debug
+

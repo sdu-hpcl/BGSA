@@ -1,0 +1,1429 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALLOC	global.h	11;"	d
+CAL_H	cal.h	2;"	d
+CHAR_NUM	config.h	17;"	d
+CPU_SIZE	config.h	37;"	d
+CPU_V_NUM	config.h	35;"	d
+CPU_WORD_SIZE	config.h	36;"	d
+DirectoryOfThisScript	.ycm_extra_conf.py	/^def DirectoryOfThisScript():$/;"	f
+FREE	global.h	13;"	d
+FlagsForFile	.ycm_extra_conf.py	/^def FlagsForFile( filename, **kwargs ):$/;"	f
+GET_TIME	timer.h	5;"	d
+GetCompilationInfoForFile	.ycm_extra_conf.py	/^def GetCompilationInfoForFile( filename ):$/;"	f
+IsHeaderFile	.ycm_extra_conf.py	/^def IsHeaderFile( filename ):$/;"	f
+MIC_MAX_THREADS	config.h	24;"	d
+MIC_SIZE	config.h	23;"	d
+MIC_V_NUM	config.h	21;"	d
+MIC_WORD_SIZE	config.h	22;"	d
+MakeRelativePathsInFlagsAbsolute	.ycm_extra_conf.py	/^def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):$/;"	f
+READ_BUCKET_SIZE	config.h	6;"	d
+REF_BUCKET_COUNT	config.h	12;"	d
+RESULT_TYPE	convert.c	10;"	d	file:
+RETAIN	global.h	14;"	d
+REUSE	global.h	12;"	d
+SEEK_CUR	convert.c	/^                    fseek(fp_input, (i - ref_start) * device_read_counts[j][temp2] * sizeof(RESULT_TYPE), SEEK_CUR);$/;"	l
+SOURCE_EXTENSIONS	.ycm_extra_conf.py	/^SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.m', '.mm' ]$/;"	v
+SSE_MAX_THREADS	config.h	31;"	d
+SSE_SIZE	config.h	30;"	d
+SSE_V_NUM	config.h	28;"	d
+SSE_WORD_SIZE	config.h	29;"	d
+_ALIGN_CORE_H_	align_core.h	2;"	d
+_CONFIG_H_	config.h	2;"	d
+_FILEH_	file.h	2;"	d
+_GLOBALH_	global.h	2;"	d
+_THREADH_	thread.h	2;"	d
+_TIMEH_	timer.h	2;"	d
+__ONMIC__	global.h	9;"	d
+_chunk_read_info	cal.h	/^typedef struct _chunk_read_info {$/;"	s
+_cpu_cal_t	cal.h	/^typedef struct _cpu_cal_t {$/;"	s
+_input_thread_arg	thread.h	/^typedef struct _input_thread_arg {$/;"	s
+_mic_cal_t	cal.h	/^typedef struct _mic_cal_t {$/;"	s
+_output_thread_arg	thread.h	/^typedef struct _output_thread_arg{$/;"	s
+_seq_t	global.h	/^typedef struct _seq_t {$/;"	s
+_sse_cal_t	cal.h	/^typedef struct _sse_cal_t {$/;"	s
+_thread_arg	thread.h	/^typedef struct _thread_arg {$/;"	s
+_thread_info	thread.h	/^typedef struct _thread_info{$/;"	s
+adjust_device_ratio	global.c	/^void adjust_device_ratio(double * device_compute_ratio, double * previous_times, int total_device_number) {$/;"	f
+adjust_device_ratio	global.h	/^void adjust_device_ratio(double * device_compute_ratios, double * previous_times, int total_device_number);$/;"	p
+adjust_device_ratio2	global.c	/^void adjust_device_ratio2(double *device_compute_ratio, double * previous_times, int total_device_number) {$/;"	f
+adjust_device_ratio3	global.c	/^void adjust_device_ratio3(double *device_compute_ratio, double * previous_times, int total_device_number) {$/;"	f
+align_cpu	align_core.c	/^void align_cpu(char * ref, cpu_read_t * read, int ref_len, int read_len, int word_num, int chunk_read_num, int result_index, cpu_write_t * results, uint64_t * dvdh_bit_mem) {$/;"	f
+align_cpu	align_core.h	/^void align_cpu(char * ref, cpu_read_t * read, int ref_len, int read_len, int word_num, int chunk_read_num, int result_index, cpu_write_t * results, uint64_t * dvdh_bit_mem);$/;"	p
+align_index_start	cal_cpu.c	/^    int64_t align_index_start;$/;"	l
+align_index_start	cal_mic.c	/^    int64_t align_index_start;$/;"	l
+align_index_start	cal_sse.c	/^    int64_t align_index_start;$/;"	l
+align_mic	align_core.c	/^__ONMIC__ void align_mic(char * ref, mic_read_t * read, int ref_len, int read_len, int word_num, int chunk_read_num, int result_index, mic_write_t * results, __m512i * dvdh_bit_mem) {$/;"	f
+align_mic	align_core.h	/^__ONMIC__ void  align_mic( char * ref , mic_read_t * read, int ref_len, int read_len, int word_num, int chunk_read_num,  int result_index, mic_write_t * results, __m512i * dvdh_bit_mem);$/;"	p
+align_result_size	cal_all.c	/^    int64_t align_result_size;$/;"	l
+align_result_size	cal_mic.c	/^    int64_t align_result_size;$/;"	l
+align_results_a	cal.h	/^extern __ONMIC__ mic_write_t * align_results_a;$/;"	x
+align_results_a	cal_mic.c	/^__ONMIC__ mic_write_t * align_results_a;$/;"	v
+align_results_a	thread.c	/^     mic_write_t * align_results_a = out_arg->align_results_a;$/;"	l
+align_results_a	thread.h	/^    mic_write_t * align_results_a;$/;"	m	struct:_output_thread_arg
+align_results_b	cal.h	/^extern __ONMIC__ mic_write_t * align_results_b;$/;"	x
+align_results_b	cal_mic.c	/^__ONMIC__ mic_write_t * align_results_b;$/;"	v
+align_results_b	thread.c	/^     mic_write_t * align_results_b = out_arg->align_results_b;$/;"	l
+align_results_b	thread.h	/^    mic_write_t * align_results_b;$/;"	m	struct:_output_thread_arg
+align_sse	align_core.c	/^void align_sse(char * ref, sse_read_t * read, int ref_len, int read_len, int word_num, int chunk_read_num, int result_index, sse_write_t * results, __m128i * dvdh_bit_mem) {$/;"	f
+align_sse	align_core.h	/^void align_sse(char * ref, sse_read_t * read, int ref_len, int read_len, int word_num, int chunk_read_num, int result_index, sse_write_t * results, __m128i * dvdh_bit_mem);$/;"	p
+all_ones	align_core.c	/^    __m128i all_ones = _mm_set1_epi32(0xffffffff);$/;"	l
+all_ones	align_core.c	/^    __m512i all_ones = _mm512_set1_epi32(0xffffffff);$/;"	l
+all_ones	align_core.c	/^    uint64_t all_ones = 0xffffffffffffffff;$/;"	l
+arg_ptr	thread.c	/^	va_list arg_ptr ;$/;"	l
+arg_ptr	thread.c	/^	va_list arg_ptr;$/;"	l
+async_flag	cal.h	/^    int     async_flag;$/;"	m	struct:_mic_cal_t
+async_flag	cal_all.c	/^    int     async_flag = cal_params->async_flag;$/;"	l
+async_flag	cal_mic.c	/^    int     async_flag = cal_params->async_flag;$/;"	l
+bit1	align_core.c	/^    __m128i bit1;$/;"	l
+bit1	align_core.c	/^    __m512i bit1;$/;"	l
+bit1	align_core.c	/^    uint64_t bit1;$/;"	l
+bit16	align_core.c	/^    __m128i bit16;$/;"	l
+bit16	align_core.c	/^    __m512i bit16;$/;"	l
+bit16	align_core.c	/^    uint64_t bit16;$/;"	l
+bit2	align_core.c	/^    __m128i bit2;$/;"	l
+bit2	align_core.c	/^    __m512i bit2;$/;"	l
+bit2	align_core.c	/^    uint64_t bit2;$/;"	l
+bit4	align_core.c	/^    __m128i bit4;$/;"	l
+bit4	align_core.c	/^    __m512i bit4;$/;"	l
+bit4	align_core.c	/^    uint64_t bit4;$/;"	l
+bit8	align_core.c	/^    __m128i bit8;$/;"	l
+bit8	align_core.c	/^    __m512i bit8;$/;"	l
+bit8	align_core.c	/^    uint64_t bit8;$/;"	l
+bit_index	global.c	/^        int bit_index = 0;$/;"	l
+bitmask	align_core.c	/^    uint32_t bitmask;$/;"	l
+bitmask	align_core.c	/^    uint64_t bitmask;$/;"	l
+bitmask	global.c	/^    uint32_t bitmask;$/;"	l
+bitmask	global.c	/^    uint64_t bitmask;$/;"	l
+block_num	convert.c	/^    int block_num = 0;$/;"	l
+bucket_index	thread.c	/^    int bucket_index = 1;$/;"	l
+bucket_num	thread.c	/^    int     bucket_num = in_arg->bucket_num;$/;"	l
+bucket_num	thread.h	/^    int     bucket_num;$/;"	m	struct:_input_thread_arg
+bucket_size	thread.c	/^    int64_t bucket_size = in_arg->bucket_size;$/;"	l
+bucket_size	thread.h	/^    int64_t bucket_size;$/;"	m	struct:_input_thread_arg
+buf	convert.c	/^    struct stat buf;$/;"	l
+buf	file.c	/^	struct stat buf;$/;"	l
+buffer	convert.c	/^    RESULT_TYPE * buffer;$/;"	l
+buffer	util.c	/^	short buffer[bit_len];$/;"	l
+buffer_flag	thread.h	/^    int buffer_flag;$/;"	m	struct:_thread_info
+buffer_size	convert.c	/^static int buffer_size = 10485760;$/;"	v	file:
+c	convert.c	/^    char c;$/;"	l
+c	main.c	/^    char c;$/;"	l
+cal_cond	thread.c	/^    pthread_cond_t  * cal_cond = & cal_input_info->cond;$/;"	l
+cal_end	cal_all.c	/^    double cal_start, cal_end;$/;"	l
+cal_end	cal_all.c	/^    double time_start, time_end, cal_start, cal_end;$/;"	l
+cal_end	cal_cpu.c	/^    double cal_start, cal_end;$/;"	l
+cal_end	cal_mic.c	/^    double cal_start, cal_end;$/;"	l
+cal_end	cal_mic.c	/^    double time_start, time_end, cal_start, cal_end;$/;"	l
+cal_end	cal_sse.c	/^    double cal_start, cal_end;$/;"	l
+cal_input_info	cal_all.c	/^    thread_info cal_input_info;$/;"	l
+cal_input_info	cal_cpu.c	/^    thread_info cal_input_info;$/;"	l
+cal_input_info	cal_mic.c	/^    thread_info cal_input_info;$/;"	l
+cal_input_info	cal_sse.c	/^    thread_info cal_input_info;$/;"	l
+cal_input_info	thread.c	/^    thread_info * cal_input_info = in_arg->cal_input_info;$/;"	l
+cal_input_info	thread.h	/^    thread_info * cal_input_info;$/;"	m	struct:_input_thread_arg
+cal_lock	thread.c	/^    pthread_mutex_t * cal_lock = & cal_input_info->lock;$/;"	l
+cal_on_all	cal.h	/^void cal_on_all();$/;"	p
+cal_on_all	cal_all.c	/^void cal_on_all() {$/;"	f
+cal_on_all_dynamic	cal.h	/^void cal_on_all_dynamic();$/;"	p
+cal_on_all_dynamic	cal_all.c	/^void cal_on_all_dynamic() {$/;"	f
+cal_on_cpu	cal.h	/^void cal_on_cpu();$/;"	p
+cal_on_cpu	cal_cpu.c	/^void cal_on_cpu() {$/;"	f
+cal_on_mic	cal.h	/^void cal_on_mic();$/;"	p
+cal_on_mic	cal_mic.c	/^void cal_on_mic() {$/;"	f
+cal_on_single	cal.h	/^void cal_on_single();$/;"	p
+cal_on_sse	cal.h	/^void cal_on_sse();$/;"	p
+cal_on_sse	cal_sse.c	/^void cal_on_sse() {$/;"	f
+cal_output_info	cal_all.c	/^    thread_info cal_output_info;$/;"	l
+cal_output_info	cal_cpu.c	/^    thread_info cal_output_info;$/;"	l
+cal_output_info	cal_mic.c	/^    thread_info cal_output_info;$/;"	l
+cal_output_info	cal_sse.c	/^    thread_info cal_output_info;$/;"	l
+cal_output_info	thread.c	/^     thread_info * cal_output_info = out_arg->cal_output_info;$/;"	l
+cal_output_info	thread.h	/^    thread_info * cal_output_info;$/;"	m	struct:_output_thread_arg
+cal_params	cal_all.c	/^    mic_cal_t * cal_params = (mic_cal_t *) args;$/;"	l
+cal_params	cal_all.c	/^    sse_cal_t * cal_params = (sse_cal_t *) args;$/;"	l
+cal_params	cal_cpu.c	/^    cpu_cal_t * cal_params = (cpu_cal_t *) args;$/;"	l
+cal_params	cal_mic.c	/^    mic_cal_t * cal_params = (mic_cal_t *) args;$/;"	l
+cal_params	cal_sse.c	/^    sse_cal_t * cal_params = (sse_cal_t *) args;$/;"	l
+cal_start	cal_all.c	/^    double cal_start, cal_end;$/;"	l
+cal_start	cal_all.c	/^    double time_start, time_end, cal_start, cal_end;$/;"	l
+cal_start	cal_cpu.c	/^    double cal_start, cal_end;$/;"	l
+cal_start	cal_mic.c	/^    double cal_start, cal_end;$/;"	l
+cal_start	cal_mic.c	/^    double time_start, time_end, cal_start, cal_end;$/;"	l
+cal_start	cal_sse.c	/^    double cal_start, cal_end;$/;"	l
+cal_total_time	cal.h	/^    double * cal_total_time;$/;"	m	struct:_cpu_cal_t
+cal_total_time	cal.h	/^    double * cal_total_time;$/;"	m	struct:_mic_cal_t
+cal_total_time	cal.h	/^    double * cal_total_time;$/;"	m	struct:_sse_cal_t
+cal_total_time	cal_all.c	/^    double * cal_total_time = cal_params->cal_total_time;$/;"	l
+cal_total_time	cal_cpu.c	/^    double * cal_total_time = cal_params->cal_total_time;$/;"	l
+cal_total_time	cal_mic.c	/^    double * cal_total_time = cal_params->cal_total_time;$/;"	l
+cal_total_time	cal_sse.c	/^    double * cal_total_time = cal_params->cal_total_time;$/;"	l
+cal_total_times	cal_all.c	/^    double cal_total_times[total_device_number];$/;"	l
+cal_total_times	cal_cpu.c	/^    double cal_total_times = 0.0;$/;"	l
+cal_total_times	cal_mic.c	/^    double cal_total_times[total_device_number];$/;"	l
+cal_total_times	cal_sse.c	/^    double cal_total_times = 0.0;$/;"	l
+carry0	align_core.c	/^    __m128i carry0;$/;"	l
+carry0	align_core.c	/^    __m512i carry0;$/;"	l
+carry0	align_core.c	/^    uint64_t carry0;$/;"	l
+carry1	align_core.c	/^    __m128i carry1;$/;"	l
+carry1	align_core.c	/^    __m512i carry1;$/;"	l
+carry1	align_core.c	/^    uint64_t carry1;$/;"	l
+carry2	align_core.c	/^    __m128i carry2;$/;"	l
+carry2	align_core.c	/^    __m512i carry2;$/;"	l
+carry2	align_core.c	/^    uint64_t carry2;$/;"	l
+carry3	align_core.c	/^    __m128i carry3;$/;"	l
+carry3	align_core.c	/^    __m512i carry3;$/;"	l
+carry3	align_core.c	/^    uint64_t carry3;$/;"	l
+carry4	align_core.c	/^    __m128i carry4;$/;"	l
+carry4	align_core.c	/^    __m512i carry4;$/;"	l
+carry4	align_core.c	/^    uint64_t carry4;$/;"	l
+carry_bit3	align_core.c	/^    __mmask16 carry_bit3;$/;"	l
+carry_bit3_temp	align_core.c	/^    __mmask16 carry_bit3_temp;$/;"	l
+carry_bit4	align_core.c	/^    __mmask16 carry_bit4;$/;"	l
+carry_bit4_temp	align_core.c	/^    __mmask16 carry_bit4_temp;$/;"	l
+carry_bit5	align_core.c	/^    __mmask16 carry_bit5;$/;"	l
+carry_bit5_temp	align_core.c	/^    __mmask16 carry_bit5_temp;$/;"	l
+carry_bit6	align_core.c	/^    __mmask16 carry_bit6;$/;"	l
+carry_bit6_temp	align_core.c	/^    __mmask16 carry_bit6_temp;$/;"	l
+carry_bit7	align_core.c	/^    __mmask16 carry_bit7;$/;"	l
+carry_bit7_temp	align_core.c	/^    __mmask16 carry_bit7_temp;$/;"	l
+carry_bitmask	align_core.c	/^    __m128i carry_bitmask = _mm_set1_epi32(0x7fffffff);$/;"	l
+carry_bitmask	align_core.c	/^    uint64_t carry_bitmask = 0x7fffffffffffffff;$/;"	l
+char_index	global.c	/^        int char_index = 0;$/;"	l
+char_value	global.c	/^    int char_value = 0;$/;"	l
+chunk_read_info	cal.h	/^} chunk_read_info;$/;"	t	typeref:struct:_chunk_read_info
+chunk_read_num	cal.h	/^    int     chunk_read_num;$/;"	m	struct:_cpu_cal_t
+chunk_read_num	cal.h	/^    int     chunk_read_num;$/;"	m	struct:_mic_cal_t
+chunk_read_num	cal.h	/^    int     chunk_read_num;$/;"	m	struct:_sse_cal_t
+chunk_read_num	cal.h	/^    int chunk_read_num;$/;"	m	struct:_chunk_read_info
+chunk_read_num	cal_all.c	/^    int     chunk_read_num = cal_params->chunk_read_num;$/;"	l
+chunk_read_num	cal_all.c	/^    int     chunk_read_num;$/;"	l
+chunk_read_num	cal_cpu.c	/^    int     chunk_read_num = cal_params->chunk_read_num;$/;"	l
+chunk_read_num	cal_cpu.c	/^    int     chunk_read_num;$/;"	l
+chunk_read_num	cal_mic.c	/^    int     chunk_read_num = cal_params->chunk_read_num;$/;"	l
+chunk_read_num	cal_mic.c	/^    int     chunk_read_num;$/;"	l
+chunk_read_num	cal_sse.c	/^    int     chunk_read_num = cal_params->chunk_read_num;$/;"	l
+chunk_read_num	cal_sse.c	/^    int     chunk_read_num;$/;"	l
+chunk_word_num	cal.h	/^    int chunk_word_num;$/;"	m	struct:_chunk_read_info
+common_write_t	config.h	19;"	d
+comp_dh_neg5_to_pos2	align_core.c	/^    __m128i comp_dh_neg5_to_pos2;$/;"	l
+comp_dh_neg5_to_pos2	align_core.c	/^    __m512i comp_dh_neg5_to_pos2;$/;"	l
+comp_dh_neg5_to_pos2	align_core.c	/^    uint64_t comp_dh_neg5_to_pos2;$/;"	l
+compilation_database_folder	.ycm_extra_conf.py	/^compilation_database_folder = ''$/;"	v
+cond	thread.h	/^    pthread_cond_t  cond;$/;"	m	struct:_thread_info
+content	global.h	/^    char * content;$/;"	m	struct:_seq_t
+convert_fasta	convert.c	/^void convert_fasta(char * input_file, char * output_file) {$/;"	f
+convert_fastq	convert.c	/^void convert_fastq(char * input_file, char * output_file) {$/;"	f
+convert_result	convert.c	/^void convert_result(FILE * fp_input, FILE * fp_info, FILE *fp_output) {$/;"	f
+convert_type	convert.c	/^int convert_type = 0;$/;"	v
+count	global.h	/^    int64_t count;$/;"	m	struct:_seq_t
+cpu_align_result_size	cal_cpu.c	/^    int64_t cpu_align_result_size;$/;"	l
+cpu_align_results_a	cal.h	/^extern cpu_write_t * cpu_align_results_a;$/;"	x
+cpu_align_results_a	cal_cpu.c	/^    cpu_write_t * cpu_align_results_a;$/;"	l
+cpu_align_results_a	cal_cpu.c	/^cpu_write_t * cpu_align_results_a;$/;"	v
+cpu_align_results_a	thread.c	/^     cpu_write_t * cpu_align_results_a = out_arg->cpu_align_results_a;$/;"	l
+cpu_align_results_a	thread.h	/^    cpu_write_t * cpu_align_results_a;$/;"	m	struct:_output_thread_arg
+cpu_align_results_b	cal.h	/^extern cpu_write_t * cpu_align_results_b;$/;"	x
+cpu_align_results_b	cal_cpu.c	/^    cpu_write_t * cpu_align_results_b;$/;"	l
+cpu_align_results_b	cal_cpu.c	/^cpu_write_t * cpu_align_results_b;$/;"	v
+cpu_align_results_b	thread.c	/^     cpu_write_t * cpu_align_results_b = out_arg->cpu_align_results_b;$/;"	l
+cpu_align_results_b	thread.h	/^    cpu_write_t * cpu_align_results_b;$/;"	m	struct:_output_thread_arg
+cpu_arg	cal_cpu.c	/^    cpu_cal_t   cpu_arg;$/;"	l
+cpu_cal	cal_cpu.c	/^void cpu_cal(void * args) {$/;"	f
+cpu_cal_align_score	cal_cpu.c	/^void cpu_cal_align_score(char * content, cpu_read_t * preprocess_reads, cpu_write_t * align_results, int ref_len, int ref_count, int read_len, int read_count, int ref_start, int ref_end, int word_num, int chunk_read_num, uint64_t * dvdh_bit_mem) {$/;"	f
+cpu_cal_t	cal.h	/^} cpu_cal_t;$/;"	t	typeref:struct:_cpu_cal_t
+cpu_device_number	cal_all.c	/^    int cpu_device_number = 1;$/;"	l
+cpu_dvdh_bit_mem	cal.h	/^extern uint64_t          * cpu_dvdh_bit_mem;$/;"	x
+cpu_dvdh_bit_mem	cal_cpu.c	/^uint64_t       * cpu_dvdh_bit_mem;$/;"	v
+cpu_dvdh_size	cal_cpu.c	/^    int     cpu_dvdh_size;$/;"	l
+cpu_handle_reads	global.c	/^void cpu_handle_reads(seq_t * read_seq, cpu_read_t * result_reads, int word_num, int64_t read_start, int64_t read_count) {$/;"	f
+cpu_handle_reads	global.h	/^void cpu_handle_reads(seq_t * read_seq, cpu_read_t * result_reads, int word_num, int64_t read_start, int64_t read_count);$/;"	p
+cpu_p_reads	thread.c	/^    cpu_read_t  * cpu_p_reads;$/;"	l
+cpu_preprocess_read_size	cal_cpu.c	/^    int64_t cpu_preprocess_read_size;$/;"	l
+cpu_preprocess_read_size	thread.c	/^    int64_t cpu_preprocess_read_size = in_arg->cpu_preprocess_read_size;$/;"	l
+cpu_preprocess_read_size	thread.h	/^    int64_t cpu_preprocess_read_size;$/;"	m	struct:_input_thread_arg
+cpu_preprocess_reads_a	cal.h	/^extern cpu_read_t  * cpu_preprocess_reads_a;$/;"	x
+cpu_preprocess_reads_a	cal_cpu.c	/^    cpu_read_t * cpu_preprocess_reads_a;$/;"	l
+cpu_preprocess_reads_a	cal_cpu.c	/^cpu_read_t  * cpu_preprocess_reads_a;$/;"	v
+cpu_preprocess_reads_a	thread.c	/^    cpu_read_t  * cpu_preprocess_reads_a = in_arg->cpu_preprocess_reads_a;$/;"	l
+cpu_preprocess_reads_a	thread.h	/^    cpu_read_t  * cpu_preprocess_reads_a;$/;"	m	struct:_input_thread_arg
+cpu_preprocess_reads_b	cal.h	/^extern cpu_read_t  * cpu_preprocess_reads_b;$/;"	x
+cpu_preprocess_reads_b	cal_cpu.c	/^    cpu_read_t * cpu_preprocess_reads_b;$/;"	l
+cpu_preprocess_reads_b	cal_cpu.c	/^cpu_read_t  * cpu_preprocess_reads_b;$/;"	v
+cpu_preprocess_reads_b	thread.c	/^    cpu_read_t  * cpu_preprocess_reads_b = in_arg->cpu_preprocess_reads_b;$/;"	l
+cpu_preprocess_reads_b	thread.h	/^    cpu_read_t  * cpu_preprocess_reads_b;$/;"	m	struct:_input_thread_arg
+cpu_read_ptr	cal.h	/^extern cpu_read_t  * cpu_read_ptr;$/;"	x
+cpu_read_ptr	cal_cpu.c	/^    cpu_read_t * cpu_read_ptr;$/;"	l
+cpu_read_ptr	cal_cpu.c	/^cpu_read_t  * cpu_read_ptr;$/;"	v
+cpu_read_t	config.h	39;"	d
+cpu_ref_end	cal.h	/^    int     cpu_ref_end;$/;"	m	struct:_cpu_cal_t
+cpu_ref_end	cal_cpu.c	/^    int     cpu_ref_end = cal_params->cpu_ref_end;$/;"	l
+cpu_ref_start	cal.h	/^    int     cpu_ref_start;$/;"	m	struct:_cpu_cal_t
+cpu_ref_start	cal_cpu.c	/^    int     cpu_ref_start = cal_params->cpu_ref_start;$/;"	l
+cpu_result_count	thread.c	/^     int64_t * cpu_result_count = out_arg->cpu_result_count;$/;"	l
+cpu_result_count	thread.h	/^    int64_t * cpu_result_count;$/;"	m	struct:_output_thread_arg
+cpu_result_ptr	cal.h	/^extern cpu_write_t * cpu_result_ptr;$/;"	x
+cpu_result_ptr	cal_cpu.c	/^    cpu_write_t * cpu_result_ptr;$/;"	l
+cpu_result_ptr	cal_cpu.c	/^cpu_write_t * cpu_result_ptr;$/;"	v
+cpu_threads	global.h	/^extern int     cpu_threads;$/;"	x
+cpu_threads	main.c	/^int     cpu_threads;$/;"	v
+cpu_word_num	cal_cpu.c	/^    int     cpu_word_num;$/;"	l
+cpu_word_num	thread.c	/^    int     cpu_word_num = in_arg->cpu_word_num;$/;"	l
+cpu_word_num	thread.h	/^    int     cpu_word_num;$/;"	m	struct:_input_thread_arg
+cpu_write_t	config.h	40;"	d
+create_folder	file.c	/^void create_folder(const char * foldername, mode_t mode) {$/;"	f
+create_folder	file.h	/^void create_folder(const char * foldname, mode_t mode);$/;"	p
+database	.ycm_extra_conf.py	/^  database = None$/;"	v
+database	.ycm_extra_conf.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder )$/;"	v
+delete_file	file.c	/^void delete_file(const char * filename) {$/;"	f
+delete_file	file.h	/^void delete_file(const char * filename);$/;"	p
+desc_start	convert.c	/^    int desc_start = 0;$/;"	l
+device_compute_radio	thread.c	/^    double  * device_compute_radio = in_arg->device_compute_ratio;$/;"	l
+device_compute_ratio	cal_all.c	/^    double  * device_compute_ratio;$/;"	l
+device_compute_ratio	cal_mic.c	/^    double  * device_compute_ratio;$/;"	l
+device_compute_ratio	thread.h	/^    double  * device_compute_ratio;$/;"	m	struct:_input_thread_arg
+device_conpute_radio	thread.c	/^    double  * device_conpute_radio = in_arg->device_compute_ratio;$/;"	l
+device_read_count	thread.c	/^    int64_t * device_read_count;$/;"	l
+device_read_counts	cal_all.c	/^    int64_t * device_read_counts;$/;"	l
+device_read_counts	cal_cpu.c	/^    int64_t * device_read_counts;$/;"	l
+device_read_counts	cal_mic.c	/^    int64_t * device_read_counts;$/;"	l
+device_read_counts	cal_sse.c	/^    int64_t * device_read_counts;$/;"	l
+device_read_counts	convert.c	/^    int64_t device_read_counts[block_num][total_device_number];$/;"	l
+device_read_counts	thread.c	/^    int64_t * device_read_counts;$/;"	l
+device_read_counts_a	cal_all.c	/^    int64_t * device_read_counts_a;$/;"	l
+device_read_counts_a	cal_cpu.c	/^    int64_t * device_read_counts_a;$/;"	l
+device_read_counts_a	cal_mic.c	/^    int64_t * device_read_counts_a;$/;"	l
+device_read_counts_a	cal_sse.c	/^    int64_t * device_read_counts_a;$/;"	l
+device_read_counts_a	thread.c	/^    int64_t * device_read_counts_a = in_arg->device_read_counts_a;$/;"	l
+device_read_counts_a	thread.h	/^    int64_t * device_read_counts_a;$/;"	m	struct:_input_thread_arg
+device_read_counts_b	cal_all.c	/^    int64_t * device_read_counts_b;$/;"	l
+device_read_counts_b	cal_cpu.c	/^    int64_t * device_read_counts_b;$/;"	l
+device_read_counts_b	cal_mic.c	/^    int64_t * device_read_counts_b;$/;"	l
+device_read_counts_b	cal_sse.c	/^    int64_t * device_read_counts_b;$/;"	l
+device_read_counts_b	thread.c	/^    int64_t * device_read_counts_b = in_arg->device_read_counts_b;$/;"	l
+device_read_counts_b	thread.h	/^    int64_t * device_read_counts_b;$/;"	m	struct:_input_thread_arg
+dh_neg1	align_core.c	/^    __m128i dh_neg1;$/;"	l
+dh_neg1	align_core.c	/^    __m512i dh_neg1;$/;"	l
+dh_neg1	align_core.c	/^    uint64_t dh_neg1;$/;"	l
+dh_neg2	align_core.c	/^    __m128i dh_neg2;$/;"	l
+dh_neg2	align_core.c	/^    __m512i dh_neg2;$/;"	l
+dh_neg2	align_core.c	/^    uint64_t dh_neg2;$/;"	l
+dh_neg3	align_core.c	/^    __m128i dh_neg3;$/;"	l
+dh_neg3	align_core.c	/^    __m512i dh_neg3;$/;"	l
+dh_neg3	align_core.c	/^    uint64_t dh_neg3;$/;"	l
+dh_neg4	align_core.c	/^    __m128i dh_neg4;$/;"	l
+dh_neg4	align_core.c	/^    __m512i dh_neg4;$/;"	l
+dh_neg4	align_core.c	/^    uint64_t dh_neg4;$/;"	l
+dh_neg5	align_core.c	/^    __m128i dh_neg5;$/;"	l
+dh_neg5	align_core.c	/^    __m512i dh_neg5;$/;"	l
+dh_neg5	align_core.c	/^    uint64_t dh_neg5;$/;"	l
+dh_neg5_to_pos2	align_core.c	/^    __m128i dh_neg5_to_pos2;$/;"	l
+dh_neg5_to_pos2	align_core.c	/^    __m512i dh_neg5_to_pos2;$/;"	l
+dh_neg5_to_pos2	align_core.c	/^    uint64_t dh_neg5_to_pos2;$/;"	l
+dh_pos1	align_core.c	/^    __m128i dh_pos1;$/;"	l
+dh_pos1	align_core.c	/^    __m512i dh_pos1;$/;"	l
+dh_pos1	align_core.c	/^    uint64_t dh_pos1;$/;"	l
+dh_pos2	align_core.c	/^    __m128i dh_pos2;$/;"	l
+dh_pos2	align_core.c	/^    __m512i dh_pos2;$/;"	l
+dh_pos2	align_core.c	/^    uint64_t dh_pos2;$/;"	l
+dh_pos3	align_core.c	/^    __m128i dh_pos3;$/;"	l
+dh_pos3	align_core.c	/^    __m512i dh_pos3;$/;"	l
+dh_pos3	align_core.c	/^    uint64_t dh_pos3;$/;"	l
+dh_pos4	align_core.c	/^    __m128i dh_pos4;$/;"	l
+dh_pos4	align_core.c	/^    __m512i dh_pos4;$/;"	l
+dh_pos4	align_core.c	/^    uint64_t dh_pos4;$/;"	l
+dh_pos5	align_core.c	/^    __m128i dh_pos5;$/;"	l
+dh_pos5	align_core.c	/^    __m512i dh_pos5;$/;"	l
+dh_pos5	align_core.c	/^    uint64_t dh_pos5;$/;"	l
+dh_pos6	align_core.c	/^    __m128i dh_pos6;$/;"	l
+dh_pos6	align_core.c	/^    __m512i dh_pos6;$/;"	l
+dh_pos6	align_core.c	/^    uint64_t dh_pos6;$/;"	l
+dh_pos7	align_core.c	/^    __m128i dh_pos7;$/;"	l
+dh_pos7	align_core.c	/^    __m512i dh_pos7;$/;"	l
+dh_pos7	align_core.c	/^    uint64_t dh_pos7;$/;"	l
+dh_pos7_or_match	align_core.c	/^    __m128i dh_pos7_or_match;$/;"	l
+dh_pos7_or_match	align_core.c	/^    __m512i dh_pos7_or_match;$/;"	l
+dh_pos7_or_match	align_core.c	/^    uint64_t dh_pos7_or_match;$/;"	l
+dh_xor_dv_bit16	align_core.c	/^    __m128i dh_xor_dv_bit16;$/;"	l
+dh_xor_dv_bit16	align_core.c	/^    __m512i dh_xor_dv_bit16;$/;"	l
+dh_xor_dv_bit16	align_core.c	/^    uint64_t dh_xor_dv_bit16;$/;"	l
+dh_xor_dv_bit2	align_core.c	/^    __m128i dh_xor_dv_bit2;$/;"	l
+dh_xor_dv_bit2	align_core.c	/^    __m512i dh_xor_dv_bit2;$/;"	l
+dh_xor_dv_bit2	align_core.c	/^    uint64_t dh_xor_dv_bit2;$/;"	l
+dh_xor_dv_bit4	align_core.c	/^    __m128i dh_xor_dv_bit4;$/;"	l
+dh_xor_dv_bit4	align_core.c	/^    __m512i dh_xor_dv_bit4;$/;"	l
+dh_xor_dv_bit4	align_core.c	/^    uint64_t dh_xor_dv_bit4;$/;"	l
+dh_xor_dv_bit8	align_core.c	/^    __m128i dh_xor_dv_bit8;$/;"	l
+dh_xor_dv_bit8	align_core.c	/^    __m512i dh_xor_dv_bit8;$/;"	l
+dh_xor_dv_bit8	align_core.c	/^    uint64_t dh_xor_dv_bit8;$/;"	l
+dh_zero	align_core.c	/^    __m128i dh_zero;$/;"	l
+dh_zero	align_core.c	/^    __m512i dh_zero;$/;"	l
+dh_zero	align_core.c	/^    uint64_t dh_zero;$/;"	l
+dhbit1	align_core.c	/^    __m128i dhbit1;$/;"	l
+dhbit1	align_core.c	/^    __m512i dhbit1;$/;"	l
+dhbit1	align_core.c	/^    uint64_t dhbit1;$/;"	l
+dhbit16	align_core.c	/^    __m128i dhbit16;$/;"	l
+dhbit16	align_core.c	/^    __m512i dhbit16;$/;"	l
+dhbit16	align_core.c	/^    uint64_t dhbit16;$/;"	l
+dhbit16_dhbit8	align_core.c	/^    __m128i dhbit16_dhbit8;$/;"	l
+dhbit16_dhbit8	align_core.c	/^    __m512i dhbit16_dhbit8;$/;"	l
+dhbit16_dhbit8	align_core.c	/^    uint64_t dhbit16_dhbit8;$/;"	l
+dhbit16_dhbit8_dhbit4	align_core.c	/^    __m128i dhbit16_dhbit8_dhbit4;$/;"	l
+dhbit16_dhbit8_dhbit4	align_core.c	/^    __m512i dhbit16_dhbit8_dhbit4;$/;"	l
+dhbit16_dhbit8_dhbit4	align_core.c	/^    uint64_t dhbit16_dhbit8_dhbit4;$/;"	l
+dhbit16_dhbit8_dhbit4_dhbit2	align_core.c	/^    __m128i dhbit16_dhbit8_dhbit4_dhbit2;$/;"	l
+dhbit16_dhbit8_dhbit4_dhbit2	align_core.c	/^    __m512i dhbit16_dhbit8_dhbit4_dhbit2;$/;"	l
+dhbit16_dhbit8_dhbit4_dhbit2	align_core.c	/^    uint64_t dhbit16_dhbit8_dhbit4_dhbit2;$/;"	l
+dhbit16_dhbit8_dhbit4_dhbit2inverse	align_core.c	/^    __m128i dhbit16_dhbit8_dhbit4_dhbit2inverse;$/;"	l
+dhbit16_dhbit8_dhbit4_dhbit2inverse	align_core.c	/^    __m512i dhbit16_dhbit8_dhbit4_dhbit2inverse;$/;"	l
+dhbit16_dhbit8_dhbit4_dhbit2inverse	align_core.c	/^    uint64_t dhbit16_dhbit8_dhbit4_dhbit2inverse;$/;"	l
+dhbit16_dhbit8_dhbit4inverse	align_core.c	/^    __m128i dhbit16_dhbit8_dhbit4inverse;$/;"	l
+dhbit16_dhbit8_dhbit4inverse	align_core.c	/^    __m512i dhbit16_dhbit8_dhbit4inverse;$/;"	l
+dhbit16_dhbit8_dhbit4inverse	align_core.c	/^    uint64_t dhbit16_dhbit8_dhbit4inverse;$/;"	l
+dhbit16_dhbit8_dhbit4inverse_dhbit2	align_core.c	/^    __m128i dhbit16_dhbit8_dhbit4inverse_dhbit2;$/;"	l
+dhbit16_dhbit8_dhbit4inverse_dhbit2	align_core.c	/^    __m512i dhbit16_dhbit8_dhbit4inverse_dhbit2;$/;"	l
+dhbit16_dhbit8_dhbit4inverse_dhbit2	align_core.c	/^    uint64_t dhbit16_dhbit8_dhbit4inverse_dhbit2;$/;"	l
+dhbit16_dhbit8_dhbit4inverse_dhbit2inverse	align_core.c	/^    __m128i dhbit16_dhbit8_dhbit4inverse_dhbit2inverse;$/;"	l
+dhbit16_dhbit8_dhbit4inverse_dhbit2inverse	align_core.c	/^    __m512i dhbit16_dhbit8_dhbit4inverse_dhbit2inverse;$/;"	l
+dhbit16_dhbit8_dhbit4inverse_dhbit2inverse	align_core.c	/^    uint64_t dhbit16_dhbit8_dhbit4inverse_dhbit2inverse;$/;"	l
+dhbit16inverse	align_core.c	/^    __m128i dhbit16inverse;$/;"	l
+dhbit16inverse	align_core.c	/^    __m512i dhbit16inverse;$/;"	l
+dhbit16inverse	align_core.c	/^    uint64_t dhbit16inverse;$/;"	l
+dhbit16inverse_dhbit8inverse	align_core.c	/^    __m128i dhbit16inverse_dhbit8inverse;$/;"	l
+dhbit16inverse_dhbit8inverse	align_core.c	/^    __m512i dhbit16inverse_dhbit8inverse;$/;"	l
+dhbit16inverse_dhbit8inverse	align_core.c	/^    uint64_t dhbit16inverse_dhbit8inverse;$/;"	l
+dhbit16inverse_dhbit8inverse_dhbit4inverse	align_core.c	/^    __m128i dhbit16inverse_dhbit8inverse_dhbit4inverse;$/;"	l
+dhbit16inverse_dhbit8inverse_dhbit4inverse	align_core.c	/^    __m512i dhbit16inverse_dhbit8inverse_dhbit4inverse;$/;"	l
+dhbit16inverse_dhbit8inverse_dhbit4inverse	align_core.c	/^    uint64_t dhbit16inverse_dhbit8inverse_dhbit4inverse;$/;"	l
+dhbit16inverse_dhbit8inverse_dhbit4inverse_dhbit2inverse	align_core.c	/^    __m128i dhbit16inverse_dhbit8inverse_dhbit4inverse_dhbit2inverse;$/;"	l
+dhbit16inverse_dhbit8inverse_dhbit4inverse_dhbit2inverse	align_core.c	/^    __m512i dhbit16inverse_dhbit8inverse_dhbit4inverse_dhbit2inverse;$/;"	l
+dhbit16inverse_dhbit8inverse_dhbit4inverse_dhbit2inverse	align_core.c	/^    uint64_t dhbit16inverse_dhbit8inverse_dhbit4inverse_dhbit2inverse;$/;"	l
+dhbit1inverse	align_core.c	/^    __m128i dhbit1inverse;$/;"	l
+dhbit1inverse	align_core.c	/^    __m512i dhbit1inverse;$/;"	l
+dhbit1inverse	align_core.c	/^    uint64_t dhbit1inverse;$/;"	l
+dhbit2	align_core.c	/^    __m128i dhbit2;$/;"	l
+dhbit2	align_core.c	/^    __m512i dhbit2;$/;"	l
+dhbit2	align_core.c	/^    uint64_t dhbit2;$/;"	l
+dhbit2inverse	align_core.c	/^    __m128i dhbit2inverse;$/;"	l
+dhbit2inverse	align_core.c	/^    __m512i dhbit2inverse;$/;"	l
+dhbit2inverse	align_core.c	/^    uint64_t dhbit2inverse;$/;"	l
+dhbit4	align_core.c	/^    __m128i dhbit4;$/;"	l
+dhbit4	align_core.c	/^    __m512i dhbit4;$/;"	l
+dhbit4	align_core.c	/^    uint64_t dhbit4;$/;"	l
+dhbit4inverse	align_core.c	/^    __m128i dhbit4inverse;$/;"	l
+dhbit4inverse	align_core.c	/^    __m512i dhbit4inverse;$/;"	l
+dhbit4inverse	align_core.c	/^    uint64_t dhbit4inverse;$/;"	l
+dhbit8	align_core.c	/^    __m128i dhbit8;$/;"	l
+dhbit8	align_core.c	/^    __m512i dhbit8;$/;"	l
+dhbit8	align_core.c	/^    uint64_t dhbit8;$/;"	l
+dhbit8inverse	align_core.c	/^    __m128i dhbit8inverse;$/;"	l
+dhbit8inverse	align_core.c	/^    __m512i dhbit8inverse;$/;"	l
+dhbit8inverse	align_core.c	/^    uint64_t dhbit8inverse;$/;"	l
+dispatch_task	global.c	/^void dispatch_task(double * device_ratio, int64_t * device_read_counts, int64_t total_read_count, int total_device_number) {$/;"	f
+dispatch_task	global.h	/^void dispatch_task(double * device_radio, int64_t * device_read_counts, int64_t total_read_count, int total_device_number);$/;"	p
+dispatched_count	global.c	/^    int64_t dispatched_count = 0;$/;"	l
+distance	convert.c	/^    int distance;$/;"	l
+down_signal_a	cal_all.c	/^char * down_signal_a;$/;"	v
+down_signal_a	global.h	/^extern char * down_signal_a;$/;"	x
+down_signal_b	cal_all.c	/^char * down_signal_b;$/;"	v
+down_signal_b	global.h	/^extern char * down_signal_b;$/;"	x
+dv_bit1	align_core.c	/^    __m128i dv_bit1;$/;"	l
+dv_bit1	align_core.c	/^    __m512i dv_bit1;$/;"	l
+dv_bit1	align_core.c	/^    uint64_t dv_bit1;$/;"	l
+dv_bit16	align_core.c	/^    __m128i dv_bit16;$/;"	l
+dv_bit16	align_core.c	/^    __m512i dv_bit16;$/;"	l
+dv_bit16	align_core.c	/^    uint64_t dv_bit16;$/;"	l
+dv_bit2	align_core.c	/^    __m128i dv_bit2;$/;"	l
+dv_bit2	align_core.c	/^    __m512i dv_bit2;$/;"	l
+dv_bit2	align_core.c	/^    uint64_t dv_bit2;$/;"	l
+dv_bit4	align_core.c	/^    __m128i dv_bit4;$/;"	l
+dv_bit4	align_core.c	/^    __m512i dv_bit4;$/;"	l
+dv_bit4	align_core.c	/^    uint64_t dv_bit4;$/;"	l
+dv_bit8	align_core.c	/^    __m128i dv_bit8;$/;"	l
+dv_bit8	align_core.c	/^    __m512i dv_bit8;$/;"	l
+dv_bit8	align_core.c	/^    uint64_t dv_bit8;$/;"	l
+dv_pos3shift_not_match	align_core.c	/^    __m128i dv_pos3shift_not_match;$/;"	l
+dv_pos3shift_not_match	align_core.c	/^    __m512i dv_pos3shift_not_match;$/;"	l
+dv_pos3shift_not_match	align_core.c	/^    uint64_t dv_pos3shift_not_match;$/;"	l
+dv_pos4shift_not_match	align_core.c	/^    __m128i dv_pos4shift_not_match;$/;"	l
+dv_pos4shift_not_match	align_core.c	/^    __m512i dv_pos4shift_not_match;$/;"	l
+dv_pos4shift_not_match	align_core.c	/^    uint64_t dv_pos4shift_not_match;$/;"	l
+dv_pos5shift_not_match	align_core.c	/^    __m128i dv_pos5shift_not_match;$/;"	l
+dv_pos5shift_not_match	align_core.c	/^    __m512i dv_pos5shift_not_match;$/;"	l
+dv_pos5shift_not_match	align_core.c	/^    uint64_t dv_pos5shift_not_match;$/;"	l
+dv_pos6shift_not_match	align_core.c	/^    __m128i dv_pos6shift_not_match;$/;"	l
+dv_pos6shift_not_match	align_core.c	/^    __m512i dv_pos6shift_not_match;$/;"	l
+dv_pos6shift_not_match	align_core.c	/^    uint64_t dv_pos6shift_not_match;$/;"	l
+dvdh_bit1	align_core.c	/^    __m128i * dvdh_bit1;$/;"	l
+dvdh_bit1	align_core.c	/^    __m512i * dvdh_bit1;$/;"	l
+dvdh_bit1	align_core.c	/^    uint64_t * dvdh_bit1;$/;"	l
+dvdh_bit16	align_core.c	/^    __m128i * dvdh_bit16;$/;"	l
+dvdh_bit16	align_core.c	/^    __m512i * dvdh_bit16;$/;"	l
+dvdh_bit16	align_core.c	/^    uint64_t * dvdh_bit16;$/;"	l
+dvdh_bit2	align_core.c	/^    __m128i * dvdh_bit2;$/;"	l
+dvdh_bit2	align_core.c	/^    __m512i * dvdh_bit2;$/;"	l
+dvdh_bit2	align_core.c	/^    uint64_t * dvdh_bit2;$/;"	l
+dvdh_bit4	align_core.c	/^    __m128i * dvdh_bit4;$/;"	l
+dvdh_bit4	align_core.c	/^    __m512i * dvdh_bit4;$/;"	l
+dvdh_bit4	align_core.c	/^    uint64_t * dvdh_bit4;$/;"	l
+dvdh_bit8	align_core.c	/^    __m128i * dvdh_bit8;$/;"	l
+dvdh_bit8	align_core.c	/^    __m512i * dvdh_bit8;$/;"	l
+dvdh_bit8	align_core.c	/^    uint64_t * dvdh_bit8;$/;"	l
+dvdh_bit_high_comp	align_core.c	/^    __m128i dvdh_bit_high_comp;$/;"	l
+dvdh_bit_high_comp	align_core.c	/^    __m512i dvdh_bit_high_comp;$/;"	l
+dvdh_bit_high_comp	align_core.c	/^    uint64_t dvdh_bit_high_comp;$/;"	l
+dvdh_bit_mem	cal.h	/^    __m128i     * dvdh_bit_mem;$/;"	m	struct:_sse_cal_t
+dvdh_bit_mem	cal.h	/^    __m512i     * dvdh_bit_mem;$/;"	m	struct:_mic_cal_t
+dvdh_bit_mem	cal.h	/^    uint64_t     * dvdh_bit_mem;$/;"	m	struct:_cpu_cal_t
+dvdh_bit_mem	cal.h	/^extern __ONMIC__ __m512i * dvdh_bit_mem;$/;"	x
+dvdh_bit_mem	cal_all.c	/^    __m128i * dvdh_bit_mem = cal_params->dvdh_bit_mem;$/;"	l
+dvdh_bit_mem	cal_cpu.c	/^    uint64_t * dvdh_bit_mem = cal_params->dvdh_bit_mem;$/;"	l
+dvdh_bit_mem	cal_mic.c	/^__ONMIC__ __m512i * dvdh_bit_mem;$/;"	v
+dvdh_bit_mem	cal_sse.c	/^    __m128i * dvdh_bit_mem = cal_params->dvdh_bit_mem;$/;"	l
+dvdh_len	align_core.c	/^__ONMIC__ extern int dvdh_len = 10;$/;"	v
+dvdh_len	global.h	/^extern __ONMIC__  int dvdh_len;$/;"	x
+dvnot7to3ormatch	align_core.c	/^    __m128i dvnot7to3ormatch;$/;"	l
+dvnot7to3ormatch	align_core.c	/^    __m512i dvnot7to3ormatch;$/;"	l
+dvnot7to3ormatch	align_core.c	/^    uint64_t dvnot7to3ormatch;$/;"	l
+dvnot7to3ormatch_dvpos7shiftormatch	align_core.c	/^    __m128i dvnot7to3ormatch_dvpos7shiftormatch;$/;"	l
+dvnot7to3ormatch_dvpos7shiftormatch	align_core.c	/^    __m512i dvnot7to3ormatch_dvpos7shiftormatch;$/;"	l
+dvnot7to3ormatch_dvpos7shiftormatch	align_core.c	/^    uint64_t dvnot7to3ormatch_dvpos7shiftormatch;$/;"	l
+dvpos3shift	align_core.c	/^    __m128i dvpos3shift;$/;"	l
+dvpos3shift	align_core.c	/^    __m512i dvpos3shift;$/;"	l
+dvpos3shift	align_core.c	/^    uint64_t dvpos3shift;$/;"	l
+dvpos3shift_dvpos4shift	align_core.c	/^    __m128i dvpos3shift_dvpos4shift;$/;"	l
+dvpos3shift_dvpos4shift	align_core.c	/^    __m512i dvpos3shift_dvpos4shift;$/;"	l
+dvpos3shift_dvpos4shift	align_core.c	/^    uint64_t dvpos3shift_dvpos4shift;$/;"	l
+dvpos4shift	align_core.c	/^    __m128i dvpos4shift;$/;"	l
+dvpos4shift	align_core.c	/^    __m512i dvpos4shift;$/;"	l
+dvpos4shift	align_core.c	/^    uint64_t dvpos4shift;$/;"	l
+dvpos5shift	align_core.c	/^    __m128i dvpos5shift;$/;"	l
+dvpos5shift	align_core.c	/^    __m512i dvpos5shift;$/;"	l
+dvpos5shift	align_core.c	/^    uint64_t dvpos5shift;$/;"	l
+dvpos5shift_dvpos6shift	align_core.c	/^    __m128i dvpos5shift_dvpos6shift;$/;"	l
+dvpos5shift_dvpos6shift	align_core.c	/^    __m512i dvpos5shift_dvpos6shift;$/;"	l
+dvpos5shift_dvpos6shift	align_core.c	/^    uint64_t dvpos5shift_dvpos6shift;$/;"	l
+dvpos5shift_dvpos6shift_dvnot7to3ormatch	align_core.c	/^    __m128i dvpos5shift_dvpos6shift_dvnot7to3ormatch;$/;"	l
+dvpos5shift_dvpos6shift_dvnot7to3ormatch	align_core.c	/^    __m512i dvpos5shift_dvpos6shift_dvnot7to3ormatch;$/;"	l
+dvpos5shift_dvpos6shift_dvnot7to3ormatch	align_core.c	/^    uint64_t dvpos5shift_dvpos6shift_dvnot7to3ormatch;$/;"	l
+dvpos5shift_dvpos6shift_dvpos3shift_dvpos4shift	align_core.c	/^    __m128i dvpos5shift_dvpos6shift_dvpos3shift_dvpos4shift;$/;"	l
+dvpos5shift_dvpos6shift_dvpos3shift_dvpos4shift	align_core.c	/^    __m512i dvpos5shift_dvpos6shift_dvpos3shift_dvpos4shift;$/;"	l
+dvpos5shift_dvpos6shift_dvpos3shift_dvpos4shift	align_core.c	/^    uint64_t dvpos5shift_dvpos6shift_dvpos3shift_dvpos4shift;$/;"	l
+dvpos5shift_dvpos6shift_dvpos3shift_dvpos4shift_dvpos7shiftormatch	align_core.c	/^    __m128i dvpos5shift_dvpos6shift_dvpos3shift_dvpos4shift_dvpos7shiftormatch;$/;"	l
+dvpos5shift_dvpos6shift_dvpos3shift_dvpos4shift_dvpos7shiftormatch	align_core.c	/^    __m512i dvpos5shift_dvpos6shift_dvpos3shift_dvpos4shift_dvpos7shiftormatch;$/;"	l
+dvpos5shift_dvpos6shift_dvpos3shift_dvpos4shift_dvpos7shiftormatch	align_core.c	/^    uint64_t dvpos5shift_dvpos6shift_dvpos3shift_dvpos4shift_dvpos7shiftormatch;$/;"	l
+dvpos6shift	align_core.c	/^    __m128i dvpos6shift;$/;"	l
+dvpos6shift	align_core.c	/^    __m512i dvpos6shift;$/;"	l
+dvpos6shift	align_core.c	/^    uint64_t dvpos6shift;$/;"	l
+dvpos7shift	align_core.c	/^    __m128i dvpos7shift;$/;"	l
+dvpos7shift	align_core.c	/^    __m512i dvpos7shift;$/;"	l
+dvpos7shift	align_core.c	/^    uint64_t dvpos7shift;$/;"	l
+dvpos7shiftormatch	align_core.c	/^    __m128i dvpos7shiftormatch;$/;"	l
+dvpos7shiftormatch	align_core.c	/^    __m512i dvpos7shiftormatch;$/;"	l
+dvpos7shiftormatch	align_core.c	/^    uint64_t dvpos7shiftormatch;$/;"	l
+endline_char	convert.c	/^    char endline_char = '\\n';$/;"	l
+extra_count	file.c	/^        int extra_count = 0;$/;"	l
+extra_count	global.h	/^    int     extra_count;$/;"	m	struct:_seq_t
+extra_counts	convert.c	/^    int extra_counts[block_num];$/;"	l
+extra_size	global.h	/^    int     extra_size;$/;"	m	struct:_seq_t
+extra_tmp	convert.c	/^                    int extra_tmp = 0;$/;"	l
+factor	align_core.c	/^        __m128i factor = _mm_set1_epi32(2);$/;"	l
+factor	align_core.c	/^        __m512i factor = _mm512_set1_epi32(2);$/;"	l
+factor	align_core.c	/^        int factor = 2;$/;"	l
+file_database	global.h	/^extern char *  file_database;$/;"	x
+file_database	main.c	/^char *  file_database;$/;"	v
+file_query	global.h	/^extern char *  file_query;$/;"	x
+file_query	main.c	/^char *  file_query;$/;"	v
+file_ratio	global.h	/^extern char *  file_ratio;$/;"	x
+file_ratio	main.c	/^char *  file_ratio;$/;"	v
+file_read	global.h	/^extern char *  file_read;$/;"	x
+file_ref	global.h	/^extern char *  file_ref;$/;"	x
+file_result	global.h	/^extern char *  file_result;$/;"	x
+file_result	main.c	/^char *  file_result;$/;"	v
+file_result_info	global.h	/^extern char *  file_result_info;$/;"	x
+file_result_info	main.c	/^char *  file_result_info;$/;"	v
+flags	.ycm_extra_conf.py	/^flags = [$/;"	v
+fp	file.c	/^    FILE * fp;$/;"	l
+fp	global.c	/^    FILE * fp = open_file(file_ratio, "r");$/;"	l
+fp	thread.c	/^     FILE    * fp = out_arg->fp;$/;"	l
+fp	thread.c	/^    FILE    * fp = in_arg->fp;$/;"	l
+fp	thread.h	/^    FILE    * fp;$/;"	m	struct:_input_thread_arg
+fp	thread.h	/^    FILE * fp;$/;"	m	struct:_output_thread_arg
+fp	thread.h	/^    FILE *fp;$/;"	m	struct:_thread_arg
+fp_info	convert.c	/^            FILE * fp_input, * fp_info, *fp_output;$/;"	l
+fp_input	convert.c	/^            FILE * fp_input, * fp_info, *fp_output;$/;"	l
+fp_input	convert.c	/^    FILE * fp_input;$/;"	l
+fp_output	convert.c	/^            FILE * fp_input, * fp_info, *fp_output;$/;"	l
+fp_output	convert.c	/^    FILE * fp_output;$/;"	l
+fp_read	cal_all.c	/^    FILE * fp_read;$/;"	l
+fp_read	cal_cpu.c	/^    FILE * fp_read;$/;"	l
+fp_read	cal_mic.c	/^    FILE * fp_read;$/;"	l
+fp_read	cal_sse.c	/^    FILE * fp_read;$/;"	l
+fp_ref	cal_all.c	/^    FILE * fp_ref;$/;"	l
+fp_ref	cal_cpu.c	/^    FILE * fp_ref;$/;"	l
+fp_ref	cal_mic.c	/^    FILE * fp_ref;$/;"	l
+fp_ref	cal_sse.c	/^    FILE * fp_ref;$/;"	l
+fp_result	cal_all.c	/^    FILE * fp_result;$/;"	l
+fp_result	cal_cpu.c	/^    FILE * fp_result;$/;"	l
+fp_result	cal_mic.c	/^    FILE * fp_result;$/;"	l
+fp_result	cal_sse.c	/^    FILE * fp_result;$/;"	l
+fp_result_info	cal_all.c	/^    FILE * fp_result_info;$/;"	l
+fp_result_info	cal_cpu.c	/^    FILE * fp_result_info;$/;"	l
+fp_result_info	cal_mic.c	/^    FILE * fp_result_info;$/;"	l
+fp_result_info	cal_sse.c	/^    FILE * fp_result_info;$/;"	l
+free_mem	convert.c	/^void free_mem(void * mem) {$/;"	f
+free_mem	global.c	/^__ONMIC__ void free_mem(void * mem) {$/;"	f
+free_mem	global.h	/^__ONMIC__ void free_mem(void * mem);$/;"	p
+free_resources	thread.c	/^void free_resources(int n, ...) {$/;"	f
+free_resources	thread.h	/^void free_resources(int n, ...);$/;"	p
+gap_score	align_core.c	/^extern int gap_score = -5;$/;"	v
+gap_socre	global.h	/^extern __ONMIC__  int  gap_socre;$/;"	x
+get_filesize	convert.c	/^uint64_t get_filesize(char * filename) {$/;"	f
+get_filesize	file.c	/^uint64_t get_filesize(const char * filename) {$/;"	f
+get_filesize	file.h	/^uint64_t get_filesize(const char * filename);$/;"	p
+get_read_from_file	file.c	/^void get_read_from_file(seq_t * seq, FILE * fp, int64_t section_size, int64_t total_size) {$/;"	f
+get_read_from_file	file.h	/^void get_read_from_file(seq_t * seq, FILE * fp, int64_t section_size, int64_t total_size);$/;"	p
+get_ref_from_file	file.c	/^void get_ref_from_file(seq_t * seq, FILE * fp, uint64_t total_size){$/;"	f
+get_ref_from_file	file.h	/^void get_ref_from_file(seq_t * seq, FILE * fp, uint64_t total_size);$/;"	p
+global_ref_bucket_num	cal_all.c	/^int     global_ref_bucket_num;$/;"	v
+global_ref_bucket_num	global.h	/^extern int     global_ref_bucket_num;$/;"	x
+handle_args	convert.c	/^void handle_args(int argc, char ** argv) {$/;"	f
+handle_args	main.c	/^void handle_args(int argc, char ** argv) {$/;"	f
+high_one	align_core.c	/^    __m128i high_one = _mm_set1_epi32(0x80000000);$/;"	l
+high_one	align_core.c	/^    uint64_t high_one = 0x8000000000000000;$/;"	l
+i	align_core.c	/^    int i, j, k, m, n;$/;"	l
+i	align_core.c	/^    int i, j, k;$/;"	l
+i	cal_all.c	/^    int i, j, k;$/;"	l
+i	cal_cpu.c	/^    int i = 0, j = 0;$/;"	l
+i	cal_cpu.c	/^    int i, j, k;$/;"	l
+i	cal_mic.c	/^    int i = 0, j = 0;$/;"	l
+i	cal_mic.c	/^    int i, j, k;$/;"	l
+i	cal_sse.c	/^    int i = 0, j = 0;$/;"	l
+i	cal_sse.c	/^    int i, j, k;$/;"	l
+i	convert.c	/^    int i = 0;$/;"	l
+i	convert.c	/^    int i, j, k, m, temp, temp2;$/;"	l
+i	convert.c	/^    int i;$/;"	l
+i	file.c	/^    int i = 0, j;$/;"	l
+i	file.c	/^    int i = 0;$/;"	l
+i	global.c	/^    int i, j;$/;"	l
+i	global.c	/^    int i;$/;"	l
+i	main.c	/^    int i;$/;"	l
+i	thread.c	/^	int i;$/;"	l
+i	thread.c	/^     int i;$/;"	l
+i	thread.c	/^    int i, k;$/;"	l
+i	util.c	/^	int i;$/;"	l
+i	util.c	/^    int i;$/;"	l
+implement_type	global.h	/^extern int     implement_type;$/;"	x
+implement_type	main.c	/^int     implement_type;$/;"	v
+in_arg	cal_all.c	/^        input_thread_arg in_arg;$/;"	l
+in_arg	cal_cpu.c	/^    input_thread_arg in_arg;$/;"	l
+in_arg	cal_mic.c	/^        input_thread_arg in_arg;$/;"	l
+in_arg	cal_sse.c	/^    input_thread_arg in_arg;$/;"	l
+in_arg	thread.c	/^    input_thread_arg * in_arg = (input_thread_arg *) args;$/;"	l
+index	align_core.c	/^        int index = result_index * MIC_V_NUM;$/;"	l
+index	align_core.c	/^        int index = result_index * SSE_V_NUM;$/;"	l
+index	cal_cpu.c	/^    int index = 0;$/;"	l
+index	cal_mic.c	/^    int index = 0;$/;"	l
+index	cal_sse.c	/^    int index = 0;$/;"	l
+info_file_name	convert.c	/^char * info_file_name;$/;"	v
+init_cpu_mic_ratio	global.c	/^void init_cpu_mic_ratio(double * device_ratio, int cpu_number, int mic_number) {$/;"	f
+init_cpu_mic_ratio	global.h	/^void init_cpu_mic_ratio(double * device_ratio, int cpu_number, int mic_number);$/;"	p
+init_device	global.c	/^void init_device(int mic_device_number) {$/;"	f
+init_device	global.h	/^void init_device(int mic_device_number) ;$/;"	p
+init_device_ratio_file	global.c	/^void init_device_ratio_file(double * device_ratio, int cpu_number, int mic_number, char * file_ratio) {$/;"	f
+init_device_ratio_file	global.h	/^void init_device_ratio_file(double * device_ratio, int cpu_number, int mic_number, char * file_ratio);$/;"	p
+init_mapping_table	global.c	/^void init_mapping_table() {$/;"	f
+init_mapping_table	global.h	/^void init_mapping_table();$/;"	p
+init_mic_ratio	global.c	/^void init_mic_ratio(double * device_ratio, int mic_number) {$/;"	f
+init_mic_ratio	global.h	/^void init_mic_ratio(double * device_ratio, int mic_number);$/;"	p
+init_neg1_prevbit	align_core.c	/^    __m128i init_neg1_prevbit;$/;"	l
+init_neg1_prevbit	align_core.c	/^    __m512i init_neg1_prevbit;$/;"	l
+init_neg1_prevbit	align_core.c	/^    uint64_t init_neg1_prevbit;$/;"	l
+init_neg2_prevbit	align_core.c	/^    __m128i init_neg2_prevbit;$/;"	l
+init_neg2_prevbit	align_core.c	/^    __m512i init_neg2_prevbit;$/;"	l
+init_neg2_prevbit	align_core.c	/^    uint64_t init_neg2_prevbit;$/;"	l
+init_neg3_prevbit	align_core.c	/^    __m128i init_neg3_prevbit;$/;"	l
+init_neg3_prevbit	align_core.c	/^    __m512i init_neg3_prevbit;$/;"	l
+init_neg3_prevbit	align_core.c	/^    uint64_t init_neg3_prevbit;$/;"	l
+init_neg4_prevbit	align_core.c	/^    __m128i init_neg4_prevbit;$/;"	l
+init_neg4_prevbit	align_core.c	/^    __m512i init_neg4_prevbit;$/;"	l
+init_neg4_prevbit	align_core.c	/^    uint64_t init_neg4_prevbit;$/;"	l
+init_pos1_prevbit	align_core.c	/^    __m128i init_pos1_prevbit;$/;"	l
+init_pos1_prevbit	align_core.c	/^    __m512i init_pos1_prevbit;$/;"	l
+init_pos1_prevbit	align_core.c	/^    uint64_t init_pos1_prevbit;$/;"	l
+init_pos2_prevbit	align_core.c	/^    __m128i init_pos2_prevbit;$/;"	l
+init_pos2_prevbit	align_core.c	/^    __m512i init_pos2_prevbit;$/;"	l
+init_pos2_prevbit	align_core.c	/^    uint64_t init_pos2_prevbit;$/;"	l
+init_pos3	align_core.c	/^    __m128i init_pos3;$/;"	l
+init_pos3	align_core.c	/^    __m512i init_pos3;$/;"	l
+init_pos3	align_core.c	/^    uint64_t init_pos3;$/;"	l
+init_pos3_prevbit	align_core.c	/^    __m128i init_pos3_prevbit;$/;"	l
+init_pos3_prevbit	align_core.c	/^    __m512i init_pos3_prevbit;$/;"	l
+init_pos3_prevbit	align_core.c	/^    uint64_t init_pos3_prevbit;$/;"	l
+init_pos4	align_core.c	/^    __m128i init_pos4;$/;"	l
+init_pos4	align_core.c	/^    __m512i init_pos4;$/;"	l
+init_pos4	align_core.c	/^    uint64_t init_pos4;$/;"	l
+init_pos4_prevbit	align_core.c	/^    __m128i init_pos4_prevbit;$/;"	l
+init_pos4_prevbit	align_core.c	/^    __m512i init_pos4_prevbit;$/;"	l
+init_pos4_prevbit	align_core.c	/^    uint64_t init_pos4_prevbit;$/;"	l
+init_pos5	align_core.c	/^    __m128i init_pos5;$/;"	l
+init_pos5	align_core.c	/^    __m512i init_pos5;$/;"	l
+init_pos5	align_core.c	/^    uint64_t init_pos5;$/;"	l
+init_pos5_prevbit	align_core.c	/^    __m128i init_pos5_prevbit;$/;"	l
+init_pos5_prevbit	align_core.c	/^    __m512i init_pos5_prevbit;$/;"	l
+init_pos5_prevbit	align_core.c	/^    uint64_t init_pos5_prevbit;$/;"	l
+init_pos6	align_core.c	/^    __m128i init_pos6;$/;"	l
+init_pos6	align_core.c	/^    __m512i init_pos6;$/;"	l
+init_pos6	align_core.c	/^    uint64_t init_pos6;$/;"	l
+init_pos6_prevbit	align_core.c	/^    __m128i init_pos6_prevbit;$/;"	l
+init_pos6_prevbit	align_core.c	/^    __m512i init_pos6_prevbit;$/;"	l
+init_pos6_prevbit	align_core.c	/^    uint64_t init_pos6_prevbit;$/;"	l
+init_pos7	align_core.c	/^    __m128i init_pos7;$/;"	l
+init_pos7	align_core.c	/^    __m512i init_pos7;$/;"	l
+init_pos7	align_core.c	/^    uint64_t init_pos7;$/;"	l
+init_pos7_prevbit	align_core.c	/^    __m128i init_pos7_prevbit;$/;"	l
+init_pos7_prevbit	align_core.c	/^    __m512i init_pos7_prevbit;$/;"	l
+init_pos7_prevbit	align_core.c	/^    uint64_t init_pos7_prevbit;$/;"	l
+init_resources	thread.c	/^void init_resources(int n, ...) {$/;"	f
+init_resources	thread.h	/^void init_resources(int n, ...);$/;"	p
+init_tal	align_core.c	/^    __m128i init_tal;$/;"	l
+init_tal	align_core.c	/^    __m512i init_tal;$/;"	l
+init_tal	align_core.c	/^    uint64_t init_tal;$/;"	l
+init_val	align_core.c	/^    __m128i init_val;$/;"	l
+init_val	align_core.c	/^    __m512i init_val;$/;"	l
+init_val	align_core.c	/^    uint64_t init_val;$/;"	l
+init_zero_prevbit	align_core.c	/^    __m128i init_zero_prevbit;$/;"	l
+init_zero_prevbit	align_core.c	/^    __m512i init_zero_prevbit;$/;"	l
+init_zero_prevbit	align_core.c	/^    uint64_t init_zero_prevbit;$/;"	l
+input_arg	cal_all.c	/^    thread_arg  input_arg;$/;"	l
+input_arg	cal_cpu.c	/^    thread_arg  input_arg;$/;"	l
+input_arg	cal_mic.c	/^    thread_arg  input_arg;$/;"	l
+input_arg	cal_sse.c	/^    thread_arg  input_arg;$/;"	l
+input_buffer	convert.c	/^    char * input_buffer;$/;"	l
+input_cond	thread.c	/^    pthread_cond_t  * input_cond = & input_info->cond;$/;"	l
+input_file_name	convert.c	/^char * input_file_name;$/;"	v
+input_info	cal_all.c	/^    thread_info input_info;$/;"	l
+input_info	cal_cpu.c	/^    thread_info input_info;$/;"	l
+input_info	cal_mic.c	/^    thread_info input_info;$/;"	l
+input_info	cal_sse.c	/^    thread_info input_info;$/;"	l
+input_info	thread.c	/^    thread_info * input_info = in_arg->input_info;$/;"	l
+input_info	thread.h	/^    thread_info * input_info;$/;"	m	struct:_input_thread_arg
+input_lock	thread.c	/^    pthread_mutex_t * input_lock = & input_info->lock;$/;"	l
+input_task_all	thread.c	/^void * input_task_all(void * args) {$/;"	f
+input_task_all	thread.h	/^void * input_task_all(void * args);$/;"	p
+input_task_all_dynamic	thread.c	/^void * input_task_all_dynamic(void * args) {$/;"	f
+input_task_all_dynamic	thread.h	/^void * input_task_all_dynamic(void * args);$/;"	p
+input_task_cpu	thread.c	/^void * input_task_cpu(void * args) {$/;"	f
+input_task_cpu	thread.h	/^void * input_task_cpu(void * args);$/;"	p
+input_task_mic	thread.c	/^void * input_task_mic(void * args) {$/;"	f
+input_task_mic	thread.h	/^void * input_task_mic(void * args);$/;"	p
+input_task_sse	thread.c	/^void * input_task_sse(void * args) {$/;"	f
+input_task_sse	thread.h	/^void * input_task_sse(void * args);$/;"	p
+input_thread_arg	thread.h	/^} input_thread_arg;$/;"	t	typeref:struct:_input_thread_arg
+is_end	file.c	/^    int is_end = 0; $/;"	l
+is_exist	file.c	/^    int is_exist = access(foldername, 0);$/;"	l
+is_start	convert.c	/^    int is_start = 0;$/;"	l
+itr	align_core.c	/^    char * itr;$/;"	l
+itr	global.c	/^    char * itr = read_seq->content + (read_seq->len + 1) * read_start;$/;"	l
+j	align_core.c	/^    int i, j, k, m, n;$/;"	l
+j	align_core.c	/^    int i, j, k;$/;"	l
+j	cal_all.c	/^    int i, j, k;$/;"	l
+j	cal_cpu.c	/^    int i = 0, j = 0;$/;"	l
+j	cal_cpu.c	/^    int i, j, k;$/;"	l
+j	cal_mic.c	/^    int i = 0, j = 0;$/;"	l
+j	cal_mic.c	/^    int i, j, k;$/;"	l
+j	cal_sse.c	/^    int i = 0, j = 0;$/;"	l
+j	cal_sse.c	/^    int i, j, k;$/;"	l
+j	convert.c	/^    int i, j, k, m, temp, temp2;$/;"	l
+j	file.c	/^    int i = 0, j;$/;"	l
+j	global.c	/^    int i, j;$/;"	l
+k	align_core.c	/^    int i, j, k, m, n;$/;"	l
+k	align_core.c	/^    int i, j, k;$/;"	l
+k	cal_all.c	/^                    int k = 0;$/;"	l
+k	cal_all.c	/^            int k;$/;"	l
+k	cal_all.c	/^    int i, j, k;$/;"	l
+k	cal_cpu.c	/^    int i, j, k;$/;"	l
+k	cal_mic.c	/^                    int k = 0;$/;"	l
+k	cal_mic.c	/^            int k;$/;"	l
+k	cal_mic.c	/^    int i, j, k;$/;"	l
+k	cal_sse.c	/^    int i, j, k;$/;"	l
+k	convert.c	/^    int i, j, k, m, temp, temp2;$/;"	l
+k	thread.c	/^            int k;$/;"	l
+k	thread.c	/^    int i, k;$/;"	l
+last_ref_bucket_count	convert.c	/^    int last_ref_bucket_count;$/;"	l
+len	global.h	/^    int len;$/;"	m	struct:_seq_t
+length	convert.c	/^    int length = 0;$/;"	l
+lock	thread.h	/^    pthread_mutex_t lock;$/;"	m	struct:_thread_info
+loop_device_ratio	cal_all.c	/^double ** loop_device_ratio;$/;"	v
+loop_device_ratio	global.h	/^extern double ** loop_device_ratio;$/;"	x
+loop_index	global.c	/^    int loop_index = 0;$/;"	l
+loop_interval	global.c	/^    int loop_interval = CPU_V_NUM * (read_seq->len + 1);$/;"	l
+loop_interval	global.c	/^    int loop_interval = MIC_V_NUM * (read_seq->len + 1);$/;"	l
+loop_interval	global.c	/^    int loop_interval = SSE_V_NUM * (read_seq->len + 1);$/;"	l
+loop_num	cal_cpu.c	/^    int loop_num = read_count \/ CPU_V_NUM;$/;"	l
+loop_num	cal_mic.c	/^    int loop_num = read_count \/ MIC_V_NUM;$/;"	l
+loop_num	cal_sse.c	/^    int loop_num = read_count \/ SSE_V_NUM;$/;"	l
+loop_num	global.c	/^    int loop_num = read_count \/ CPU_V_NUM;$/;"	l
+loop_num	global.c	/^    int loop_num = read_count \/ MIC_V_NUM;$/;"	l
+loop_num	global.c	/^    int loop_num = read_count \/ SSE_V_NUM;$/;"	l
+loop_num_temp	cal_cpu.c	/^    int loop_num_temp = loop_num;$/;"	l
+loop_num_temp	cal_mic.c	/^    int loop_num_temp = loop_num;$/;"	l
+loop_num_temp	cal_sse.c	/^    int loop_num_temp = loop_num;$/;"	l
+loop_used_times	cal_all.c	/^double ** loop_used_times;$/;"	v
+loop_used_times	global.h	/^extern double ** loop_used_times;$/;"	x
+m	align_core.c	/^    int i, j, k, m, n;$/;"	l
+m	convert.c	/^    int i, j, k, m, temp, temp2;$/;"	l
+main	convert.c	/^int main(int argc, char ** argv) {$/;"	f
+main	main.c	/^int main(int argc, char ** argv) {$/;"	f
+malloc_mem	convert.c	/^void * malloc_mem(uint64_t size) {$/;"	f
+malloc_mem	global.c	/^__ONMIC__ void * malloc_mem(uint64_t size) {$/;"	f
+malloc_mem	global.h	/^__ONMIC__ void * malloc_mem(uint64_t size);$/;"	p
+mapping_table	global.c	/^uint32_t mapping_table[128] __attribute__((aligned(64)));$/;"	v
+mapping_table	global.h	/^extern uint32_t mapping_table[128] __attribute__((aligned(64)));$/;"	x
+match_score	align_core.c	/^extern int match_score = 2;$/;"	v
+match_score	global.h	/^extern __ONMIC__  int  match_score;$/;"	x
+matches	align_core.c	/^    __m128i matches;$/;"	l
+matches	align_core.c	/^    __m512i matches;$/;"	l
+matches	align_core.c	/^    uint64_t matches;$/;"	l
+matchv	align_core.c	/^    cpu_read_t * matchv;$/;"	l
+matchv	align_core.c	/^    mic_read_t * matchv;$/;"	l
+matchv	align_core.c	/^    sse_read_t * matchv;$/;"	l
+max_block_size	convert.c	/^    int64_t max_block_size = 0;$/;"	l
+max_devices	main.c	/^    int max_devices = _Offload_number_of_devices();$/;"	l
+max_length	cal_all.c	/^int     max_length;$/;"	v
+max_length	global.h	/^extern int     max_length;$/;"	x
+mem_end	cal_all.c	/^    double mem_start, mem_end;$/;"	l
+mem_end	cal_cpu.c	/^    double mem_start, mem_end;$/;"	l
+mem_end	cal_mic.c	/^    double mem_start, mem_end;$/;"	l
+mem_end	cal_sse.c	/^    double mem_start, mem_end;$/;"	l
+mem_end	thread.c	/^    double mem_start, mem_end;$/;"	l
+mem_num	cal_all.c	/^    double mem_time, mem_num;$/;"	l
+mem_num	cal_mic.c	/^    double mem_time, mem_num;$/;"	l
+mem_start	cal_all.c	/^    double mem_start, mem_end;$/;"	l
+mem_start	cal_cpu.c	/^    double mem_start, mem_end;$/;"	l
+mem_start	cal_mic.c	/^    double mem_start, mem_end;$/;"	l
+mem_start	cal_sse.c	/^    double mem_start, mem_end;$/;"	l
+mem_start	thread.c	/^    double mem_start, mem_end;$/;"	l
+mem_time	cal_all.c	/^    double mem_time, mem_num;$/;"	l
+mem_time	cal_mic.c	/^    double mem_time, mem_num;$/;"	l
+mem_total_time	cal_all.c	/^double mem_total_time;$/;"	v
+mem_total_time	global.h	/^extern double mem_total_time;$/;"	x
+mic_args	cal_all.c	/^    mic_cal_t * mic_args;$/;"	l
+mic_args	cal_mic.c	/^    mic_cal_t * mic_args;$/;"	l
+mic_cal	cal_mic.c	/^void  mic_cal(void * args) {$/;"	f
+mic_cal_align_score	cal.h	/^__ONMIC__ void mic_cal_align_score(char * content, mic_read_t * preprocess_reads, mic_write_t * align_results, int ref_len, int ref_count, int read_len, int read_count, int ref_start, int ref_end, int word_num, int chunk_read_num,  __m512i * dvdh_bit_mem);$/;"	p
+mic_cal_align_score	cal_mic.c	/^__ONMIC__ void mic_cal_align_score(char * content, mic_read_t * preprocess_reads, mic_write_t * align_results, int ref_len, int ref_count, int read_len, int read_count, int ref_start, int ref_end, int word_num, int chunk_read_num,  __m512i * dvdh_bit_mem) {$/;"	f
+mic_cal_all	cal_all.c	/^void  mic_cal_all(void * args) {$/;"	f
+mic_cal_t	cal.h	/^} mic_cal_t;$/;"	t	typeref:struct:_mic_cal_t
+mic_cpu_ratio	global.c	/^double  mic_cpu_ratio = 4.54;$/;"	v
+mic_cpu_ratio	global.h	/^extern double  mic_cpu_ratio;$/;"	x
+mic_device_number	cal_all.c	/^    int mic_device_number = mic_number;$/;"	l
+mic_device_number	cal_mic.c	/^    int mic_device_number = mic_number;$/;"	l
+mic_device_number	thread.c	/^     int mic_device_number = out_arg->mic_device_number;$/;"	l
+mic_device_number	thread.h	/^    int           mic_device_number;$/;"	m	struct:_output_thread_arg
+mic_device_number	thread.h	/^    int     mic_device_number;$/;"	m	struct:_input_thread_arg
+mic_handle_reads	global.c	/^void mic_handle_reads(seq_t * read_seq, mic_read_t * result_reads, int word_num, int64_t read_start, int64_t read_count) {$/;"	f
+mic_handle_reads	global.h	/^void mic_handle_reads(seq_t * read_seq, mic_read_t * result_reads, int word_num, int64_t read_start, int64_t read_count);$/;"	p
+mic_index	cal.h	/^    int     mic_index;$/;"	m	struct:_mic_cal_t
+mic_index	cal_all.c	/^    int     mic_index = cal_params->mic_index;$/;"	l
+mic_index	cal_mic.c	/^    int     mic_index = cal_params->mic_index;$/;"	l
+mic_number	global.h	/^extern int     mic_number;$/;"	x
+mic_number	main.c	/^int     mic_number;$/;"	v
+mic_read_index	cal_all.c	/^                int mic_read_index = 0;$/;"	l
+mic_read_index	cal_all.c	/^            int mic_read_index = 0;$/;"	l
+mic_read_index	cal_mic.c	/^            int mic_read_index = 0;$/;"	l
+mic_read_index	thread.c	/^            int mic_read_index = 0;$/;"	l
+mic_read_index	thread.c	/^    int mic_read_index;$/;"	l
+mic_read_t	config.h	25;"	d
+mic_ref_end	cal.h	/^    int     mic_ref_end;$/;"	m	struct:_mic_cal_t
+mic_ref_end	cal_all.c	/^    int     mic_ref_end = cal_params->mic_ref_end;$/;"	l
+mic_ref_end	cal_mic.c	/^    int     mic_ref_end = cal_params->mic_ref_end;$/;"	l
+mic_ref_start	cal.h	/^    int     mic_ref_start;$/;"	m	struct:_mic_cal_t
+mic_ref_start	cal_all.c	/^    int     mic_ref_start = cal_params->mic_ref_start;$/;"	l
+mic_ref_start	cal_mic.c	/^    int     mic_ref_start = cal_params->mic_ref_start;$/;"	l
+mic_write_t	config.h	26;"	d
+mismatch_score	align_core.c	/^extern int mismatch_score = -3;$/;"	v
+mismatch_socre	global.h	/^extern __ONMIC__  int  mismatch_socre;$/;"	x
+n	align_core.c	/^    int i, j, k, m, n;$/;"	l
+next_high_one	align_core.c	/^    __m128i next_high_one = _mm_set1_epi32(0x40000000);$/;"	l
+next_high_one	align_core.c	/^    uint64_t next_high_one = 0x4000000000000000;$/;"	l
+not_matches	align_core.c	/^    __m128i not_matches;$/;"	l
+not_matches	align_core.c	/^    __m512i not_matches;$/;"	l
+not_matches	align_core.c	/^    uint64_t not_matches;$/;"	l
+nums	util.c	/^    uint32_t *nums = (uint32_t *)_mm_malloc(sizeof(uint32_t) * 16, 64);$/;"	l
+offload_dvdh_size	cal.h	/^    int     offload_dvdh_size;$/;"	m	struct:_mic_cal_t
+offload_dvdh_size	cal_all.c	/^    int     offload_dvdh_size = cal_params->offload_dvdh_size;$/;"	l
+offload_dvdh_size	cal_all.c	/^    int     offload_dvdh_size;$/;"	l
+offload_dvdh_size	cal_mic.c	/^    int     offload_dvdh_size = cal_params->offload_dvdh_size;$/;"	l
+offload_dvdh_size	cal_mic.c	/^    int     offload_dvdh_size;$/;"	l
+offload_end	cal_all.c	/^    double offload_start, offload_end;$/;"	l
+offload_end	cal_cpu.c	/^    double offload_start, offload_end;$/;"	l
+offload_end	cal_mic.c	/^    double offload_start, offload_end;$/;"	l
+offload_end	cal_sse.c	/^    double offload_start, offload_end;$/;"	l
+offload_read_size	cal_all.c	/^    int64_t offload_read_size;$/;"	l
+offload_read_size	cal_mic.c	/^    int64_t offload_read_size;$/;"	l
+offload_read_size	thread.c	/^    int64_t offload_read_size = in_arg->offload_read_size;$/;"	l
+offload_read_size	thread.h	/^    int64_t offload_read_size;$/;"	m	struct:_input_thread_arg
+offload_result_size	cal_all.c	/^    int64_t offload_result_size;$/;"	l
+offload_result_size	cal_mic.c	/^    int64_t offload_result_size;$/;"	l
+offload_start	cal_all.c	/^    double offload_start, offload_end;$/;"	l
+offload_start	cal_cpu.c	/^    double offload_start, offload_end;$/;"	l
+offload_start	cal_mic.c	/^    double offload_start, offload_end;$/;"	l
+offload_start	cal_sse.c	/^    double offload_start, offload_end;$/;"	l
+offload_total_time	cal.h	/^    double * offload_total_time;$/;"	m	struct:_mic_cal_t
+offload_total_time	cal_all.c	/^    double * offload_total_time = cal_params->offload_total_time;$/;"	l
+offload_total_time	cal_mic.c	/^    double * offload_total_time = cal_params->offload_total_time;$/;"	l
+offload_total_times	cal_all.c	/^    double offload_total_times[total_device_number];$/;"	l
+offload_total_times	cal_mic.c	/^    double offload_total_times[total_device_number];$/;"	l
+one	align_core.c	/^    uint32_t one = 0x00000001;$/;"	l
+one	align_core.c	/^    uint64_t one = 0x0000000000000001;$/;"	l
+one	global.c	/^const uint32_t one = 1;$/;"	v
+one	global.h	/^extern const uint32_t one;$/;"	x
+open_file	file.c	/^FILE * open_file(const char * filename, const char * mode) {$/;"	f
+open_file	file.h	/^FILE * open_file(const char * filename, const char * mode);$/;"	p
+order_char	convert.c	/^    char order_char = '@';$/;"	l
+order_start	convert.c	/^    int order_start = 0;$/;"	l
+out_arg	cal_all.c	/^        output_thread_arg  out_arg;$/;"	l
+out_arg	cal_cpu.c	/^    output_thread_arg  out_arg;$/;"	l
+out_arg	cal_mic.c	/^        output_thread_arg  out_arg;$/;"	l
+out_arg	cal_sse.c	/^    output_thread_arg  out_arg;$/;"	l
+out_arg	thread.c	/^     output_thread_arg * out_arg = (output_thread_arg *)args;$/;"	l
+output_arg	cal_all.c	/^    thread_arg  output_arg;$/;"	l
+output_arg	cal_cpu.c	/^    thread_arg  output_arg;$/;"	l
+output_arg	cal_mic.c	/^    thread_arg  output_arg;$/;"	l
+output_arg	cal_sse.c	/^    thread_arg  output_arg;$/;"	l
+output_buffer	convert.c	/^    char * output_buffer;$/;"	l
+output_file_name	convert.c	/^char * output_file_name;$/;"	v
+output_index	convert.c	/^    int output_index = 0;$/;"	l
+output_info	cal_all.c	/^    thread_info output_info;$/;"	l
+output_info	cal_cpu.c	/^    thread_info output_info;$/;"	l
+output_info	cal_mic.c	/^    thread_info output_info;$/;"	l
+output_info	cal_sse.c	/^    thread_info output_info;$/;"	l
+output_info	thread.c	/^     thread_info * output_info = out_arg->output_info;$/;"	l
+output_info	thread.h	/^    thread_info * output_info;$/;"	m	struct:_output_thread_arg
+output_task_all	thread.c	/^void * output_task_all(void * args) {$/;"	f
+output_task_all	thread.h	/^void * output_task_all(void * args);$/;"	p
+output_task_cpu	thread.c	/^void * output_task_cpu(void * args) {$/;"	f
+output_task_cpu	thread.h	/^void * output_task_cpu(void * args);$/;"	p
+output_task_mic	thread.c	/^void * output_task_mic(void * args) {$/;"	f
+output_task_mic	thread.h	/^void * output_task_mic(void * args);$/;"	p
+output_task_sse	thread.c	/^void * output_task_sse(void * args) {$/;"	f
+output_task_sse	thread.h	/^void * output_task_sse(void * args);$/;"	p
+output_thread_arg	thread.h	/^} output_thread_arg;$/;"	t	typeref:struct:_output_thread_arg
+overflow0	align_core.c	/^    __m128i overflow0;$/;"	l
+overflow0	align_core.c	/^    uint64_t overflow0;$/;"	l
+overflow1	align_core.c	/^    __m128i overflow1;$/;"	l
+overflow1	align_core.c	/^    uint64_t overflow1;$/;"	l
+overflow10	align_core.c	/^    __m128i overflow10;$/;"	l
+overflow10	align_core.c	/^    uint64_t overflow10;$/;"	l
+overflow11	align_core.c	/^    __m128i overflow11;$/;"	l
+overflow11	align_core.c	/^    uint64_t overflow11;$/;"	l
+overflow2	align_core.c	/^    __m128i overflow2;$/;"	l
+overflow2	align_core.c	/^    uint64_t overflow2;$/;"	l
+overflow3	align_core.c	/^    __m128i overflow3;$/;"	l
+overflow3	align_core.c	/^    uint64_t overflow3;$/;"	l
+overflow4	align_core.c	/^    __m128i overflow4;$/;"	l
+overflow4	align_core.c	/^    uint64_t overflow4;$/;"	l
+overflow5	align_core.c	/^    __m128i overflow5;$/;"	l
+overflow5	align_core.c	/^    uint64_t overflow5;$/;"	l
+overflow6	align_core.c	/^    __m128i overflow6;$/;"	l
+overflow6	align_core.c	/^    uint64_t overflow6;$/;"	l
+overflow7	align_core.c	/^    __m128i overflow7;$/;"	l
+overflow7	align_core.c	/^    uint64_t overflow7;$/;"	l
+overflow8	align_core.c	/^    __m128i overflow8;$/;"	l
+overflow8	align_core.c	/^    uint64_t overflow8;$/;"	l
+overflow9	align_core.c	/^    __m128i overflow9;$/;"	l
+overflow9	align_core.c	/^    uint64_t overflow9;$/;"	l
+p_index	global.c	/^    int p_index = 0;$/;"	l
+p_reads	thread.c	/^    mic_read_t  * p_reads;$/;"	l
+p_tmp	cal_all.c	/^                mic_read_t * p_tmp;$/;"	l
+p_tmp	cal_all.c	/^            mic_read_t * p_tmp ;$/;"	l
+p_tmp	cal_mic.c	/^            mic_read_t * p_tmp ;$/;"	l
+p_tmp	thread.c	/^            mic_read_t * p_tmp;$/;"	l
+p_tmp	thread.c	/^    mic_read_t * p_tmp;$/;"	l
+preprocess_read_size	cal_all.c	/^    int64_t preprocess_read_size;$/;"	l
+preprocess_read_size	cal_mic.c	/^    int64_t preprocess_read_size;$/;"	l
+preprocess_read_size	thread.c	/^    int64_t preprocess_read_size = in_arg->preprocess_read_size;$/;"	l
+preprocess_read_size	thread.h	/^    int64_t preprocess_read_size;$/;"	m	struct:_input_thread_arg
+preprocess_reads_a	cal.h	/^extern __ONMIC__ mic_read_t  * preprocess_reads_a;$/;"	x
+preprocess_reads_a	cal_mic.c	/^__ONMIC__ mic_read_t  * preprocess_reads_a;$/;"	v
+preprocess_reads_a	thread.c	/^    mic_read_t  * preprocess_reads_a = in_arg->preprocess_reads_a;$/;"	l
+preprocess_reads_a	thread.h	/^    mic_read_t  * preprocess_reads_a;$/;"	m	struct:_input_thread_arg
+preprocess_reads_b	cal.h	/^extern __ONMIC__ mic_read_t  * preprocess_reads_b;$/;"	x
+preprocess_reads_b	cal_mic.c	/^__ONMIC__ mic_read_t  * preprocess_reads_b;$/;"	v
+preprocess_reads_b	thread.c	/^    mic_read_t  * preprocess_reads_b = in_arg->preprocess_reads_b;$/;"	l
+preprocess_reads_b	thread.h	/^    mic_read_t  * preprocess_reads_b;$/;"	m	struct:_input_thread_arg
+previous_device_times	cal_all.c	/^    double previous_device_times[total_device_number];$/;"	l
+print_binary	util.c	/^__ONMIC__ void print_binary(uint64_t t, int bit_len) {$/;"	f
+print_binary	util.h	/^__ONMIC__ void print_binary(uint64_t t, int bit_len);$/;"	p
+print_help	convert.c	/^void print_help() {$/;"	f
+print_help	main.c	/^void print_help() {$/;"	f
+printf_mm512	util.c	/^__ONMIC__ void  printf_mm512(__m512i m) {$/;"	f
+printf_mm512	util.h	/^__ONMIC__ void printf_mm512(__m512i m);$/;"	p
+printf_mm512_one	util.c	/^__ONMIC__ void printf_mm512_one(__m512i m, int index, char* s, int i) {$/;"	f
+printf_mm512_one	util.h	/^__ONMIC__ void printf_mm512_one(__m512i m, int index, char* s, int i);$/;"	p
+printf_mm512_one_int	util.c	/^__ONMIC__ void printf_mm512_one_int(__m512i m, int index, char* s) {$/;"	f
+printf_mm512_one_int	util.h	/^__ONMIC__ void printf_mm512_one_int(__m512i m, int index, char* s);$/;"	p
+process_end	cal_all.c	/^    double process_start, process_end;$/;"	l
+process_end	cal_cpu.c	/^    double process_start, process_end;$/;"	l
+process_end	cal_mic.c	/^    double process_start, process_end;$/;"	l
+process_end	cal_sse.c	/^    double process_start, process_end;$/;"	l
+process_end	global.c	/^double process_end;$/;"	v
+process_start	cal_all.c	/^    double process_start, process_end;$/;"	l
+process_start	cal_cpu.c	/^    double process_start, process_end;$/;"	l
+process_start	cal_mic.c	/^    double process_start, process_end;$/;"	l
+process_start	cal_sse.c	/^    double process_start, process_end;$/;"	l
+process_start	global.c	/^double process_start;$/;"	v
+qopt-prefetch	Makefile	/^	icc  -O3 -qopenmp  -qopt-prefetch=4 -qopt-threads-per-core=4 -qopt-prefetch-distance=0,0   global.c util.c file.c thread.c align_core.c cal_cpu.c cal_sse.c cal_mic.c cal_all.c main.c -o aligner -lpthread$/;"	m
+read_actual_size	cal_all.c	/^    int64_t read_actual_size = 0;$/;"	l
+read_actual_size	cal_cpu.c	/^    int64_t read_actual_size = 0;$/;"	l
+read_actual_size	cal_mic.c	/^    int64_t read_actual_size = 0;$/;"	l
+read_actual_size	cal_sse.c	/^    int64_t read_actual_size = 0;$/;"	l
+read_bucket_count	cal_all.c	/^    int     read_bucket_count = 0;$/;"	l
+read_bucket_count	cal_cpu.c	/^    int     read_bucket_count = 0;$/;"	l
+read_bucket_count	cal_mic.c	/^    int     read_bucket_count = 0;$/;"	l
+read_bucket_count	cal_sse.c	/^    int     read_bucket_count = 0;$/;"	l
+read_bucket_index	cal_all.c	/^    int     read_bucket_index = 0;$/;"	l
+read_bucket_index	cal_cpu.c	/^    int     read_bucket_index = 0;$/;"	l
+read_bucket_index	cal_mic.c	/^    int     read_bucket_index = 0;$/;"	l
+read_bucket_index	cal_sse.c	/^    int     read_bucket_index = 0;$/;"	l
+read_bucket_num	cal_all.c	/^    int     read_bucket_num = 0;$/;"	l
+read_bucket_num	cal_cpu.c	/^    int     read_bucket_num = 0;$/;"	l
+read_bucket_num	cal_mic.c	/^    int     read_bucket_num = 0;$/;"	l
+read_bucket_num	cal_sse.c	/^    int     read_bucket_num = 0;$/;"	l
+read_count	cal.h	/^    int64_t read_count;$/;"	m	struct:_cpu_cal_t
+read_count	cal.h	/^    int64_t read_count;$/;"	m	struct:_mic_cal_t
+read_count	cal.h	/^    int64_t read_count;$/;"	m	struct:_sse_cal_t
+read_count	cal_all.c	/^    int64_t read_count = cal_params->read_count;$/;"	l
+read_count	cal_cpu.c	/^    int64_t read_count = cal_params->read_count;$/;"	l
+read_count	cal_mic.c	/^    int64_t read_count = cal_params->read_count;$/;"	l
+read_count	cal_sse.c	/^    int64_t read_count = cal_params->read_count;$/;"	l
+read_end	cal_all.c	/^    double read_start, read_end;$/;"	l
+read_end	cal_cpu.c	/^    double read_start, read_end;$/;"	l
+read_end	cal_mic.c	/^    double read_start, read_end;$/;"	l
+read_end	cal_sse.c	/^    double read_start, read_end;$/;"	l
+read_end	thread.c	/^    double read_start, read_end;$/;"	l
+read_itr	cal_cpu.c	/^    cpu_read_t * read_itr;$/;"	l
+read_itr	cal_mic.c	/^    mic_read_t * read_itr;$/;"	l
+read_itr	cal_sse.c	/^    sse_read_t * read_itr;$/;"	l
+read_len	cal_all.c	/^    int     read_len = read_seq->len;$/;"	l
+read_len	cal_all.c	/^    int     read_len;$/;"	l
+read_len	cal_cpu.c	/^    int     read_len = read_seq->len;$/;"	l
+read_len	cal_cpu.c	/^    int     read_len;$/;"	l
+read_len	cal_mic.c	/^    int     read_len = read_seq->len;$/;"	l
+read_len	cal_mic.c	/^    int     read_len;$/;"	l
+read_len	cal_sse.c	/^    int     read_len = read_seq->len;$/;"	l
+read_len	cal_sse.c	/^    int     read_len;$/;"	l
+read_ptr	cal.h	/^    cpu_read_t  * read_ptr;$/;"	m	struct:_cpu_cal_t
+read_ptr	cal.h	/^    mic_read_t  * read_ptr;$/;"	m	struct:_mic_cal_t
+read_ptr	cal.h	/^    sse_read_t  * read_ptr;$/;"	m	struct:_sse_cal_t
+read_ptr	cal.h	/^extern __ONMIC__ mic_read_t  * read_ptr;$/;"	x
+read_ptr	cal_all.c	/^    mic_read_t  * read_ptr = cal_params->read_ptr;$/;"	l
+read_ptr	cal_all.c	/^    mic_read_t  * read_ptr;$/;"	l
+read_ptr	cal_all.c	/^    sse_read_t  * read_ptr = & (cal_params->read_ptr[read_ptr_offset]);$/;"	l
+read_ptr	cal_cpu.c	/^    cpu_read_t  * read_ptr = & (cal_params->read_ptr[read_ptr_offset]);$/;"	l
+read_ptr	cal_mic.c	/^    mic_read_t  * read_ptr = cal_params->read_ptr;$/;"	l
+read_ptr	cal_mic.c	/^    mic_read_t  * read_ptr;$/;"	l
+read_ptr	cal_mic.c	/^__ONMIC__ mic_read_t  * read_ptr;$/;"	v
+read_ptr	cal_sse.c	/^    sse_read_t  * read_ptr = & (cal_params->read_ptr[read_ptr_offset]);$/;"	l
+read_ptr_offset	cal.h	/^    int64_t read_ptr_offset;$/;"	m	struct:_cpu_cal_t
+read_ptr_offset	cal.h	/^    int64_t read_ptr_offset;$/;"	m	struct:_mic_cal_t
+read_ptr_offset	cal.h	/^    int64_t read_ptr_offset;$/;"	m	struct:_sse_cal_t
+read_ptr_offset	cal_all.c	/^    int64_t read_ptr_offset = cal_params->read_ptr_offset;$/;"	l
+read_ptr_offset	cal_all.c	/^    int64_t read_ptr_offset;$/;"	l
+read_ptr_offset	cal_cpu.c	/^    int64_t read_ptr_offset = cal_params->read_ptr_offset;$/;"	l
+read_ptr_offset	cal_mic.c	/^    int64_t read_ptr_offset;$/;"	l
+read_ptr_offset	cal_sse.c	/^    int64_t read_ptr_offset = cal_params->read_ptr_offset;$/;"	l
+read_seq	cal.h	/^    seq_t       * read_seq;$/;"	m	struct:_cpu_cal_t
+read_seq	cal.h	/^    seq_t       * read_seq;$/;"	m	struct:_mic_cal_t
+read_seq	cal.h	/^    seq_t       * read_seq;$/;"	m	struct:_sse_cal_t
+read_seq	cal.h	/^extern __ONMIC__ seq_t * read_seq;$/;"	x
+read_seq	cal_all.c	/^    seq_t   * read_seq = cal_params->read_seq;$/;"	l
+read_seq	cal_cpu.c	/^    seq_t   * read_seq = cal_params->read_seq;$/;"	l
+read_seq	cal_mic.c	/^    seq_t   * read_seq = cal_params->read_seq;$/;"	l
+read_seq	cal_mic.c	/^__ONMIC__ seq_t * read_seq;$/;"	v
+read_seq	cal_sse.c	/^    seq_t   * read_seq = cal_params->read_seq;$/;"	l
+read_seq_a	cal.h	/^extern __ONMIC__ seq_t read_seq_a;$/;"	x
+read_seq_a	cal_mic.c	/^__ONMIC__ seq_t read_seq_a;$/;"	v
+read_seq_a	thread.c	/^    seq_t       * read_seq_a = in_arg->read_seq_a;$/;"	l
+read_seq_a	thread.h	/^    seq_t   * read_seq_a;$/;"	m	struct:_input_thread_arg
+read_seq_b	cal.h	/^extern __ONMIC__ seq_t read_seq_b;$/;"	x
+read_seq_b	cal_mic.c	/^__ONMIC__ seq_t read_seq_b;$/;"	v
+read_seq_b	thread.c	/^    seq_t       * read_seq_b = in_arg->read_seq_b;$/;"	l
+read_seq_b	thread.h	/^    seq_t   * read_seq_b;$/;"	m	struct:_input_thread_arg
+read_size	cal.h	/^    int64_t read_size;$/;"	m	struct:_mic_cal_t
+read_size	cal_all.c	/^    int64_t read_size = cal_params->read_size;$/;"	l
+read_size	cal_mic.c	/^    int64_t read_size = cal_params->read_size;$/;"	l
+read_size	file.c	/^    int64_t read_size = 0;$/;"	l
+read_start	cal_all.c	/^    double read_start, read_end;$/;"	l
+read_start	cal_cpu.c	/^    double read_start, read_end;$/;"	l
+read_start	cal_mic.c	/^    double read_start, read_end;$/;"	l
+read_start	cal_sse.c	/^    double read_start, read_end;$/;"	l
+read_start	thread.c	/^    double read_start, read_end;$/;"	l
+read_temp	align_core.c	/^    cpu_read_t * read_temp = read;$/;"	l
+read_temp	align_core.c	/^    mic_read_t * read_temp = read;$/;"	l
+read_temp	align_core.c	/^    sse_read_t * read_temp = read;$/;"	l
+read_total_count	cal_all.c	/^    int64_t read_total_count = 0;$/;"	l
+read_total_count	cal_cpu.c	/^    int64_t read_total_count = 0;$/;"	l
+read_total_count	cal_mic.c	/^    int64_t read_total_count = 0;$/;"	l
+read_total_count	cal_sse.c	/^    int64_t read_total_count = 0;$/;"	l
+read_total_size	cal_all.c	/^    int64_t read_total_size = 0;$/;"	l
+read_total_size	cal_cpu.c	/^    int64_t read_total_size = 0;$/;"	l
+read_total_size	cal_mic.c	/^    int64_t read_total_size = 0;$/;"	l
+read_total_size	cal_sse.c	/^    int64_t read_total_size = 0;$/;"	l
+read_total_time	cal_all.c	/^double read_total_time;$/;"	v
+read_total_time	global.h	/^extern double read_total_time;$/;"	x
+ref_bucket_count	cal_all.c	/^    int     ref_bucket_count;$/;"	l
+ref_bucket_count	cal_cpu.c	/^    int     ref_bucket_count;$/;"	l
+ref_bucket_count	cal_mic.c	/^    int     ref_bucket_count;$/;"	l
+ref_bucket_count	cal_sse.c	/^    int     ref_bucket_count;$/;"	l
+ref_bucket_index	cal_all.c	/^    int     ref_bucket_index = 0;$/;"	l
+ref_bucket_index	cal_cpu.c	/^    int     ref_bucket_index = 0;$/;"	l
+ref_bucket_index	cal_mic.c	/^    int     ref_bucket_index = 0;$/;"	l
+ref_bucket_index	cal_sse.c	/^    int     ref_bucket_index = 0;$/;"	l
+ref_bucket_num	cal_all.c	/^    int     ref_bucket_num;$/;"	l
+ref_bucket_num	cal_cpu.c	/^    int     ref_bucket_num;$/;"	l
+ref_bucket_num	cal_mic.c	/^    int     ref_bucket_num;$/;"	l
+ref_bucket_num	cal_sse.c	/^    int     ref_bucket_num;$/;"	l
+ref_bucket_num	convert.c	/^    int ref_bucket_num;$/;"	l
+ref_content	cal_all.c	/^    char   * ref_content = ref_seq->content;$/;"	l
+ref_content	cal_cpu.c	/^    char   * ref_content = ref_seq->content;$/;"	l
+ref_content	cal_mic.c	/^    char   * ref_content = ref_seq->content;$/;"	l
+ref_content	cal_sse.c	/^    char   * ref_content = ref_seq->content;$/;"	l
+ref_count	cal_all.c	/^    int64_t ref_count = ref_seq->count;$/;"	l
+ref_count	cal_cpu.c	/^    int64_t ref_count = ref_seq->count;$/;"	l
+ref_count	cal_mic.c	/^    int64_t ref_count = ref_seq->count;$/;"	l
+ref_count	cal_sse.c	/^    int64_t ref_count = ref_seq->count;$/;"	l
+ref_count	convert.c	/^    int64_t ref_count = 0;$/;"	l
+ref_end	cal_all.c	/^    int     ref_end;$/;"	l
+ref_end	cal_cpu.c	/^    int     ref_end;$/;"	l
+ref_end	cal_mic.c	/^    int     ref_end;$/;"	l
+ref_end	cal_sse.c	/^    int     ref_end;$/;"	l
+ref_end	convert.c	/^    int ref_start, ref_end;$/;"	l
+ref_itr	cal_cpu.c	/^    char * ref_itr;$/;"	l
+ref_itr	cal_mic.c	/^    char * ref_itr;$/;"	l
+ref_itr	cal_sse.c	/^    char * ref_itr;$/;"	l
+ref_len	cal_all.c	/^    int     ref_len = ref_seq->len;$/;"	l
+ref_len	cal_all.c	/^    int     ref_len;$/;"	l
+ref_len	cal_cpu.c	/^    int     ref_len = ref_seq->len;$/;"	l
+ref_len	cal_cpu.c	/^    int     ref_len;$/;"	l
+ref_len	cal_mic.c	/^    int     ref_len = ref_seq->len;$/;"	l
+ref_len	cal_mic.c	/^    int     ref_len;$/;"	l
+ref_len	cal_sse.c	/^    int     ref_len = ref_seq->len;$/;"	l
+ref_len	cal_sse.c	/^    int     ref_len;$/;"	l
+ref_seq	cal.h	/^    seq_t       * ref_seq;$/;"	m	struct:_cpu_cal_t
+ref_seq	cal.h	/^    seq_t       * ref_seq;$/;"	m	struct:_mic_cal_t
+ref_seq	cal.h	/^    seq_t       * ref_seq;$/;"	m	struct:_sse_cal_t
+ref_seq	cal.h	/^extern __ONMIC__ seq_t   ref_seq;$/;"	x
+ref_seq	cal_all.c	/^    seq_t   * ref_seq = cal_params->ref_seq;$/;"	l
+ref_seq	cal_cpu.c	/^    seq_t   * ref_seq = cal_params->ref_seq;$/;"	l
+ref_seq	cal_mic.c	/^    seq_t   * ref_seq = cal_params->ref_seq;$/;"	l
+ref_seq	cal_mic.c	/^__ONMIC__ seq_t   ref_seq;$/;"	v
+ref_seq	cal_sse.c	/^    seq_t   * ref_seq = cal_params->ref_seq;$/;"	l
+ref_start	cal_all.c	/^    int     ref_start;$/;"	l
+ref_start	cal_cpu.c	/^    int     ref_start;$/;"	l
+ref_start	cal_mic.c	/^    int     ref_start;$/;"	l
+ref_start	cal_sse.c	/^    int     ref_start;$/;"	l
+ref_start	convert.c	/^    int ref_start, ref_end;$/;"	l
+ref_total_size	cal_all.c	/^    int64_t ref_total_size;$/;"	l
+ref_total_size	cal_cpu.c	/^    int64_t ref_total_size = 0;$/;"	l
+ref_total_size	cal_mic.c	/^    int64_t ref_total_size;$/;"	l
+ref_total_size	cal_sse.c	/^    int64_t ref_total_size = 0;$/;"	l
+remain_dh_neg5	align_core.c	/^    __m128i remain_dh_neg5;$/;"	l
+remain_dh_neg5	align_core.c	/^    __m512i remain_dh_neg5;$/;"	l
+remain_dh_neg5	align_core.c	/^    uint64_t remain_dh_neg5;$/;"	l
+remain_size	thread.c	/^    int64_t remain_size = total_size;$/;"	l
+rest_count	global.c	/^    int64_t rest_count = total_read_count - dispatched_count;$/;"	l
+rest_read_num	cal.h	/^    int rest_read_num;$/;"	m	struct:_chunk_read_info
+rest_read_num	cal_cpu.c	/^    int rest_read_num;$/;"	l
+rest_read_num	cal_mic.c	/^    int rest_read_num;$/;"	l
+rest_read_num	cal_sse.c	/^    int rest_read_num;$/;"	l
+rest_word_num	cal.h	/^    int rest_word_num;$/;"	m	struct:_chunk_read_info
+result	file.c	/^    int result = remove(filename);$/;"	l
+result_bucket_counts	cal_all.c	/^    int64_t * result_bucket_counts;$/;"	l
+result_bucket_counts	cal_cpu.c	/^    int64_t * result_bucket_counts;$/;"	l
+result_bucket_counts	cal_mic.c	/^    int64_t * result_bucket_counts;$/;"	l
+result_bucket_counts	cal_sse.c	/^    int64_t * result_bucket_counts;$/;"	l
+result_bucket_counts	thread.c	/^    int64_t * result_bucket_counts = in_arg->result_bucket_counts;$/;"	l
+result_bucket_counts	thread.h	/^    int64_t * result_bucket_counts;$/;"	m	struct:_input_thread_arg
+result_count	thread.c	/^     int64_t * result_count = out_arg->result_count;$/;"	l
+result_count	thread.h	/^    int64_t * result_count;$/;"	m	struct:_output_thread_arg
+result_length	convert.c	/^    int result_length;$/;"	l
+result_length	main.c	/^    int result_length = strlen(file_result);$/;"	l
+result_ptr	cal.h	/^    cpu_write_t * result_ptr;$/;"	m	struct:_cpu_cal_t
+result_ptr	cal.h	/^    mic_write_t * result_ptr;$/;"	m	struct:_mic_cal_t
+result_ptr	cal.h	/^    sse_write_t * result_ptr;$/;"	m	struct:_sse_cal_t
+result_ptr	cal.h	/^extern __ONMIC__ mic_write_t * result_ptr;$/;"	x
+result_ptr	cal_all.c	/^    mic_write_t * result_ptr = cal_params->result_ptr;$/;"	l
+result_ptr	cal_all.c	/^    mic_write_t * result_ptr;$/;"	l
+result_ptr	cal_all.c	/^    sse_write_t * result_ptr = & (cal_params->result_ptr[result_ptr_offset]);$/;"	l
+result_ptr	cal_cpu.c	/^    cpu_write_t * result_ptr = & (cal_params->result_ptr[result_ptr_offset]);$/;"	l
+result_ptr	cal_mic.c	/^    mic_write_t * result_ptr = cal_params->result_ptr;$/;"	l
+result_ptr	cal_mic.c	/^    mic_write_t * result_ptr;$/;"	l
+result_ptr	cal_mic.c	/^__ONMIC__ mic_write_t * result_ptr;$/;"	v
+result_ptr	cal_sse.c	/^    sse_write_t * result_ptr = & (cal_params->result_ptr[result_ptr_offset]);$/;"	l
+result_ptr_offset	cal.h	/^    int64_t result_ptr_offset;$/;"	m	struct:_cpu_cal_t
+result_ptr_offset	cal.h	/^    int64_t result_ptr_offset;$/;"	m	struct:_mic_cal_t
+result_ptr_offset	cal.h	/^    int64_t result_ptr_offset;$/;"	m	struct:_sse_cal_t
+result_ptr_offset	cal_all.c	/^    int64_t result_ptr_offset = cal_params->result_ptr_offset;$/;"	l
+result_ptr_offset	cal_all.c	/^    int64_t result_ptr_offset;$/;"	l
+result_ptr_offset	cal_cpu.c	/^    int64_t result_ptr_offset = cal_params->result_ptr_offset;$/;"	l
+result_ptr_offset	cal_mic.c	/^    int64_t result_ptr_offset;$/;"	l
+result_ptr_offset	cal_sse.c	/^    int64_t result_ptr_offset = cal_params->result_ptr_offset;$/;"	l
+result_size	cal.h	/^    int64_t result_size;$/;"	m	struct:_mic_cal_t
+result_size	cal_all.c	/^    int64_t result_size = cal_params->result_size;$/;"	l
+result_size	cal_mic.c	/^    int64_t result_size = cal_params->result_size;$/;"	l
+result_size	thread.c	/^     int64_t   result_size = out_arg->result_size;$/;"	l
+result_size	thread.h	/^    int64_t   result_size;$/;"	m	struct:_output_thread_arg
+run_flag	thread.h	/^    int run_flag;$/;"	m	struct:_thread_info
+score	align_core.c	/^        __m128i score = _mm_set1_epi32(-5 * ref_len);$/;"	l
+score	align_core.c	/^        __m512i score = _mm512_set1_epi32(-5 * ref_len);$/;"	l
+score	align_core.c	/^        int score = -5 * ref_len;$/;"	l
+seq	thread.c	/^    seq_t       * seq;$/;"	l
+seq_t	global.h	/^} seq_t;$/;"	t	typeref:struct:_seq_t
+shutdown	thread.h	/^    int shutdown;$/;"	m	struct:_thread_info
+single_count	global.c	/^    int64_t single_count;$/;"	l
+single_handle_reads	global.c	/^void single_handle_reads(seq_t * read_seq, cpu_read_t * result_reads, int word_num, int64_t read_start, int64_t read_count) {$/;"	f
+single_handle_reads	global.h	/^void single_handle_reads(seq_t * read_seq, cpu_read_t * result_reads, int word_num, int64_t read_start, int64_t read_count);$/;"	p
+single_read_count	cal_all.c	/^                int single_read_count;$/;"	l
+single_read_count	cal_all.c	/^            int single_read_count;$/;"	l
+single_read_count	cal_all.c	/^    int64_t single_read_count;$/;"	l
+single_read_count	cal_mic.c	/^            int single_read_count;$/;"	l
+single_read_count	cal_mic.c	/^    int64_t single_read_count;$/;"	l
+single_read_count	thread.c	/^            int single_read_count;$/;"	l
+single_read_count	thread.c	/^    int single_read_count;$/;"	l
+single_read_size	cal_all.c	/^                int single_read_size;$/;"	l
+single_read_size	cal_all.c	/^            int single_read_size;$/;"	l
+single_read_size	cal_all.c	/^    int64_t single_read_size;$/;"	l
+single_read_size	cal_mic.c	/^            int single_read_size;$/;"	l
+single_read_size	cal_mic.c	/^    int64_t single_read_size;$/;"	l
+single_read_size	thread.c	/^            int single_read_size;$/;"	l
+single_read_size	thread.c	/^    int single_read_size;$/;"	l
+single_result_count	cal_all.c	/^    int64_t single_result_count;$/;"	l
+single_result_count	cal_mic.c	/^    int64_t single_result_count;$/;"	l
+single_result_size	cal_all.c	/^    int64_t single_result_size;$/;"	l
+single_result_size	cal_mic.c	/^    int64_t single_result_size;$/;"	l
+size	global.h	/^    int64_t size;$/;"	m	struct:_seq_t
+sizeof	convert.c	/^                    fseek(fp_input, (i - ref_start) * device_read_counts[j][temp2] * sizeof(RESULT_TYPE), SEEK_CUR);$/;"	p	file:
+sse_align_result_size	cal_all.c	/^    int64_t sse_align_result_size;$/;"	l
+sse_align_result_size	cal_sse.c	/^    int64_t sse_align_result_size;$/;"	l
+sse_align_results_a	cal.h	/^extern sse_write_t * sse_align_results_a;$/;"	x
+sse_align_results_a	cal_sse.c	/^    sse_write_t * sse_align_results_a;$/;"	l
+sse_align_results_a	cal_sse.c	/^sse_write_t * sse_align_results_a;$/;"	v
+sse_align_results_a	thread.c	/^     sse_write_t * sse_align_results_a = out_arg->sse_align_results_a;$/;"	l
+sse_align_results_a	thread.h	/^    sse_write_t * sse_align_results_a;$/;"	m	struct:_output_thread_arg
+sse_align_results_b	cal.h	/^extern sse_write_t * sse_align_results_b;$/;"	x
+sse_align_results_b	cal_sse.c	/^    sse_write_t * sse_align_results_b;$/;"	l
+sse_align_results_b	cal_sse.c	/^sse_write_t * sse_align_results_b;$/;"	v
+sse_align_results_b	thread.c	/^     sse_write_t * sse_align_results_b = out_arg->sse_align_results_b;$/;"	l
+sse_align_results_b	thread.h	/^    sse_write_t * sse_align_results_b;$/;"	m	struct:_output_thread_arg
+sse_arg	cal_all.c	/^    sse_cal_t   sse_arg;$/;"	l
+sse_arg	cal_sse.c	/^    sse_cal_t   sse_arg;$/;"	l
+sse_cal	cal_sse.c	/^void sse_cal(void * args) {$/;"	f
+sse_cal_align_score	cal.h	/^void sse_cal_align_score(char * content, sse_read_t * preprocess_reads, sse_write_t * align_results, int ref_len, int ref_count, int read_len, int read_count, int ref_start, int ref_end, int word_num, int chunk_read_num, __m128i * dvdh_bit_mem);$/;"	p
+sse_cal_align_score	cal_sse.c	/^void sse_cal_align_score(char * content, sse_read_t * preprocess_reads, sse_write_t * align_results, int ref_len, int ref_count, int read_len, int read_count, int ref_start, int ref_end, int word_num, int chunk_read_num, __m128i * dvdh_bit_mem) {$/;"	f
+sse_cal_all	cal_all.c	/^void sse_cal_all(void * args) {$/;"	f
+sse_cal_t	cal.h	/^} sse_cal_t;$/;"	t	typeref:struct:_sse_cal_t
+sse_chunk_read_num	cal_all.c	/^    int     sse_chunk_read_num;$/;"	l
+sse_dvdh_bit_mem	cal.h	/^extern __m128i           * sse_dvdh_bit_mem;$/;"	x
+sse_dvdh_bit_mem	cal_sse.c	/^__m128i     * sse_dvdh_bit_mem;$/;"	v
+sse_dvdh_size	cal_all.c	/^    int     sse_dvdh_size;$/;"	l
+sse_dvdh_size	cal_sse.c	/^    int     sse_dvdh_size;$/;"	l
+sse_handle_reads	global.c	/^void sse_handle_reads(seq_t * read_seq, sse_read_t * result_reads, int word_num, int64_t read_start, int64_t read_count) {$/;"	f
+sse_handle_reads	global.h	/^void sse_handle_reads(seq_t * read_seq, sse_read_t * result_reads, int word_num, int64_t read_start, int64_t read_count);$/;"	p
+sse_p_reads	thread.c	/^    sse_read_t  * sse_p_reads;$/;"	l
+sse_preprocess_read_size	cal_all.c	/^    int64_t sse_preprocess_read_size;$/;"	l
+sse_preprocess_read_size	cal_sse.c	/^    int64_t sse_preprocess_read_size;$/;"	l
+sse_preprocess_read_size	thread.c	/^    int64_t sse_preprocess_read_size = in_arg->sse_preprocess_read_size;$/;"	l
+sse_preprocess_read_size	thread.h	/^    int64_t sse_preprocess_read_size;$/;"	m	struct:_input_thread_arg
+sse_preprocess_reads_a	cal.h	/^extern sse_read_t  * sse_preprocess_reads_a;$/;"	x
+sse_preprocess_reads_a	cal_sse.c	/^    sse_read_t * sse_preprocess_reads_a;$/;"	l
+sse_preprocess_reads_a	cal_sse.c	/^sse_read_t  * sse_preprocess_reads_a;$/;"	v
+sse_preprocess_reads_a	thread.c	/^    sse_read_t  * sse_preprocess_reads_a = in_arg->sse_preprocess_reads_a;$/;"	l
+sse_preprocess_reads_a	thread.h	/^    sse_read_t  * sse_preprocess_reads_a;$/;"	m	struct:_input_thread_arg
+sse_preprocess_reads_b	cal.h	/^extern sse_read_t  * sse_preprocess_reads_b;$/;"	x
+sse_preprocess_reads_b	cal_sse.c	/^    sse_read_t * sse_preprocess_reads_b;$/;"	l
+sse_preprocess_reads_b	cal_sse.c	/^sse_read_t  * sse_preprocess_reads_b;$/;"	v
+sse_preprocess_reads_b	thread.c	/^    sse_read_t  * sse_preprocess_reads_b = in_arg->sse_preprocess_reads_b;$/;"	l
+sse_preprocess_reads_b	thread.h	/^    sse_read_t  * sse_preprocess_reads_b;$/;"	m	struct:_input_thread_arg
+sse_read_ptr	cal.h	/^extern sse_read_t  * sse_read_ptr;$/;"	x
+sse_read_ptr	cal_sse.c	/^    sse_read_t * sse_read_ptr;$/;"	l
+sse_read_ptr	cal_sse.c	/^sse_read_t  * sse_read_ptr;$/;"	v
+sse_read_t	config.h	32;"	d
+sse_ref_end	cal.h	/^    int     sse_ref_end;$/;"	m	struct:_sse_cal_t
+sse_ref_end	cal_all.c	/^    int     sse_ref_end = cal_params->sse_ref_end;$/;"	l
+sse_ref_end	cal_sse.c	/^    int     sse_ref_end = cal_params->sse_ref_end;$/;"	l
+sse_ref_start	cal.h	/^    int     sse_ref_start;$/;"	m	struct:_sse_cal_t
+sse_ref_start	cal_all.c	/^    int     sse_ref_start = cal_params->sse_ref_start;$/;"	l
+sse_ref_start	cal_sse.c	/^    int     sse_ref_start = cal_params->sse_ref_start;$/;"	l
+sse_result_bucket_counts	cal_all.c	/^    int64_t * sse_result_bucket_counts;$/;"	l
+sse_result_bucket_counts	thread.c	/^    int64_t * sse_result_bucket_counts = in_arg->sse_result_bucket_counts;$/;"	l
+sse_result_bucket_counts	thread.h	/^    int64_t * sse_result_bucket_counts;$/;"	m	struct:_input_thread_arg
+sse_result_count	thread.c	/^     int64_t * sse_result_count = out_arg->sse_result_count;$/;"	l
+sse_result_count	thread.h	/^    int64_t * sse_result_count;$/;"	m	struct:_output_thread_arg
+sse_result_ptr	cal.h	/^extern sse_write_t * sse_result_ptr;$/;"	x
+sse_result_ptr	cal_sse.c	/^    sse_write_t * sse_result_ptr;$/;"	l
+sse_result_ptr	cal_sse.c	/^sse_write_t * sse_result_ptr;$/;"	v
+sse_result_total_count	cal_all.c	/^    int64_t sse_result_total_count;$/;"	l
+sse_word_num	cal_all.c	/^    int     sse_word_num;$/;"	l
+sse_word_num	cal_sse.c	/^    int     sse_word_num;$/;"	l
+sse_word_num	thread.c	/^    int     sse_word_num = in_arg->sse_word_num;$/;"	l
+sse_word_num	thread.h	/^    int     sse_word_num;$/;"	m	struct:_input_thread_arg
+sse_write_t	config.h	33;"	d
+start	align_core.c	/^    int start = tid * word_num * dvdh_len;$/;"	l
+start_char	convert.c	/^    char start_char = '>';$/;"	l
+start_index	global.c	/^    int start_index = 0;$/;"	l
+success	file.c	/^        int success = mkdir(foldername, mode);$/;"	l
+sum	align_core.c	/^    __m128i sum;$/;"	l
+sum	align_core.c	/^    __m512i sum;$/;"	l
+sum	align_core.c	/^    uint64_t sum;$/;"	l
+sumbit1	align_core.c	/^    __m128i sumbit1;$/;"	l
+sumbit1	align_core.c	/^    __m512i sumbit1;$/;"	l
+sumbit1	align_core.c	/^    uint64_t sumbit1;$/;"	l
+sumbit16	align_core.c	/^    __m128i sumbit16;$/;"	l
+sumbit16	align_core.c	/^    __m512i sumbit16;$/;"	l
+sumbit16	align_core.c	/^    uint64_t sumbit16;$/;"	l
+sumbit2	align_core.c	/^    __m128i sumbit2;$/;"	l
+sumbit2	align_core.c	/^    __m512i sumbit2;$/;"	l
+sumbit2	align_core.c	/^    uint64_t sumbit2;$/;"	l
+sumbit4	align_core.c	/^    __m128i sumbit4;$/;"	l
+sumbit4	align_core.c	/^    __m512i sumbit4;$/;"	l
+sumbit4	align_core.c	/^    uint64_t sumbit4;$/;"	l
+sumbit8	align_core.c	/^    __m128i sumbit8;$/;"	l
+sumbit8	align_core.c	/^    __m512i sumbit8;$/;"	l
+sumbit8	align_core.c	/^    uint64_t sumbit8;$/;"	l
+temp	convert.c	/^    int i, j, k, m, temp, temp2;$/;"	l
+temp2	convert.c	/^    int i, j, k, m, temp, temp2;$/;"	l
+thread_arg	thread.h	/^} thread_arg;$/;"	t	typeref:struct:_thread_arg
+thread_id	thread.h	/^    pthread_t       thread_id;$/;"	m	struct:_thread_info
+thread_info	thread.h	/^} thread_info;$/;"	t	typeref:struct:_thread_info
+tid	align_core.c	/^    int tid = omp_get_thread_num();$/;"	l
+time_end	cal_all.c	/^                    double time_start, time_end;$/;"	l
+time_end	cal_all.c	/^    double time_start, time_end, cal_start, cal_end;$/;"	l
+time_end	cal_all.c	/^    double time_start, time_end;$/;"	l
+time_end	cal_cpu.c	/^    double time_start, time_end;$/;"	l
+time_end	cal_mic.c	/^    double time_start, time_end, cal_start, cal_end;$/;"	l
+time_end	cal_sse.c	/^    double time_start, time_end;$/;"	l
+time_index	cal_all.c	/^int     time_index;$/;"	v
+time_index	global.h	/^extern int     time_index;$/;"	x
+time_start	cal_all.c	/^                    double time_start, time_end;$/;"	l
+time_start	cal_all.c	/^    double time_start, time_end, cal_start, cal_end;$/;"	l
+time_start	cal_all.c	/^    double time_start, time_end;$/;"	l
+time_start	cal_cpu.c	/^    double time_start, time_end;$/;"	l
+time_start	cal_mic.c	/^    double time_start, time_end, cal_start, cal_end;$/;"	l
+time_start	cal_sse.c	/^    double time_start, time_end;$/;"	l
+tmp_cal_arg	cal_all.c	/^    mic_cal_t * tmp_cal_arg;$/;"	l
+tmp_cal_arg	cal_mic.c	/^    mic_cal_t * tmp_cal_arg;$/;"	l
+tmp_cpu_arg	cal_cpu.c	/^    cpu_cal_t * tmp_cpu_arg;$/;"	l
+tmp_info	thread.c	/^	thread_info * tmp_info = NULL;$/;"	l
+tmp_ratio	global.c	/^    double tmp_ratio[total_device_number];$/;"	l
+tmp_read_num	cal_cpu.c	/^    int tmp_read_num;$/;"	l
+tmp_read_num	cal_mic.c	/^    int tmp_read_num;$/;"	l
+tmp_read_num	cal_sse.c	/^    int tmp_read_num;$/;"	l
+tmp_sse_arg	cal_all.c	/^    sse_cal_t * tmp_sse_arg;$/;"	l
+tmp_sse_arg	cal_sse.c	/^    sse_cal_t * tmp_sse_arg;$/;"	l
+tmp_value	align_core.c	/^    __m128i tmp_value;$/;"	l
+tmp_value	align_core.c	/^    __m512i tmp_value;$/;"	l
+tmp_value	align_core.c	/^    uint64_t tmp_value;$/;"	l
+tmpbit1	align_core.c	/^    __m128i tmpbit1;$/;"	l
+tmpbit1	align_core.c	/^    __m512i tmpbit1;$/;"	l
+tmpbit1	align_core.c	/^    uint64_t tmpbit1;$/;"	l
+tmpbit16	align_core.c	/^    __m128i tmpbit16;$/;"	l
+tmpbit16	align_core.c	/^    __m512i tmpbit16;$/;"	l
+tmpbit16	align_core.c	/^    uint64_t tmpbit16;$/;"	l
+tmpbit2	align_core.c	/^    __m128i tmpbit2;$/;"	l
+tmpbit2	align_core.c	/^    __m512i tmpbit2;$/;"	l
+tmpbit2	align_core.c	/^    uint64_t tmpbit2;$/;"	l
+tmpbit4	align_core.c	/^    __m128i tmpbit4;$/;"	l
+tmpbit4	align_core.c	/^    __m512i tmpbit4;$/;"	l
+tmpbit4	align_core.c	/^    uint64_t tmpbit4;$/;"	l
+tmpbit8	align_core.c	/^    __m128i tmpbit8;$/;"	l
+tmpbit8	align_core.c	/^    __m512i tmpbit8;$/;"	l
+tmpbit8	align_core.c	/^    uint64_t tmpbit8;$/;"	l
+total	global.c	/^    int total = 0;$/;"	l
+total_device_number	cal_all.c	/^    int total_device_number;$/;"	l
+total_device_number	cal_cpu.c	/^    int total_device_number = 1;$/;"	l
+total_device_number	cal_mic.c	/^    int total_device_number;$/;"	l
+total_device_number	cal_sse.c	/^    int total_device_number = 1;$/;"	l
+total_device_number	convert.c	/^    int total_device_number = 0;$/;"	l
+total_device_number	thread.c	/^    int total_device_number = in_arg->total_device_number;$/;"	l
+total_device_number	thread.h	/^    int     total_device_number;$/;"	m	struct:_input_thread_arg
+total_end	cal_all.c	/^    double total_start, total_end;$/;"	l
+total_end	cal_cpu.c	/^    double total_start, total_end;$/;"	l
+total_end	cal_mic.c	/^    double total_start, total_end;$/;"	l
+total_end	cal_sse.c	/^    double total_start, total_end;$/;"	l
+total_radio	global.c	/^    double total_radio = 0.0;$/;"	l
+total_result_count	cal_all.c	/^    int64_t total_result_count = 0;$/;"	l
+total_result_count	cal_cpu.c	/^    int64_t total_result_count = 0;$/;"	l
+total_result_count	cal_mic.c	/^    int64_t total_result_count = 0;$/;"	l
+total_result_count	cal_sse.c	/^    int64_t total_result_count = 0;$/;"	l
+total_size	thread.c	/^    int64_t total_size = in_arg->total_size;$/;"	l
+total_size	thread.h	/^    int64_t total_size;$/;"	m	struct:_input_thread_arg
+total_start	cal_all.c	/^    double total_start, total_end;$/;"	l
+total_start	cal_cpu.c	/^    double total_start, total_end;$/;"	l
+total_start	cal_mic.c	/^    double total_start, total_end;$/;"	l
+total_start	cal_sse.c	/^    double total_start, total_end;$/;"	l
+total_temp	cal_all.c	/^    int total_temp = 0;$/;"	l
+total_temp	cal_cpu.c	/^    int total_temp = 0;$/;"	l
+total_temp	cal_mic.c	/^    int total_temp = 0;$/;"	l
+total_temp	cal_sse.c	/^    int total_temp = 0;$/;"	l
+unit_count_double	global.c	/^    double unit_count_double = total_read_count \/ total_radio;$/;"	l
+unit_count_int	global.c	/^    int64_t unit_count_int = (int64_t) unit_count_double;$/;"	l
+up_signal_a	cal_all.c	/^char * up_signal_a;$/;"	v
+up_signal_a	global.h	/^extern char * up_signal_a;$/;"	x
+up_signal_b	cal_all.c	/^char * up_signal_b;$/;"	v
+up_signal_b	global.h	/^extern char * up_signal_b;$/;"	x
+use_dynamic	global.h	/^extern int     use_dynamic;$/;"	x
+use_dynamic	main.c	/^int     use_dynamic;$/;"	v
+use_times	cal_all.c	/^double ** use_times;$/;"	v
+use_times	global.h	/^extern double ** use_times;$/;"	x
+vec1	align_core.c	/^        __m128i vec1 = _mm_set1_epi32(1);$/;"	l
+vec1	align_core.c	/^        __m512i vec1 = _mm512_set1_epi32(1);$/;"	l
+vec16	align_core.c	/^        __m128i vec16 = _mm_set1_epi32(16);$/;"	l
+vec16	align_core.c	/^        __m512i vec16 = _mm512_set1_epi32(16);$/;"	l
+vec2	align_core.c	/^        __m128i vec2 = _mm_set1_epi32(2);$/;"	l
+vec2	align_core.c	/^        __m512i vec2 = _mm512_set1_epi32(2);$/;"	l
+vec4	align_core.c	/^        __m128i vec4 = _mm_set1_epi32(4);$/;"	l
+vec4	align_core.c	/^        __m512i vec4 = _mm512_set1_epi32(4);$/;"	l
+vec8	align_core.c	/^        __m128i vec8 = _mm_set1_epi32(8);$/;"	l
+vec8	align_core.c	/^        __m512i vec8 = _mm512_set1_epi32(8);$/;"	l
+vec_5	align_core.c	/^        __m128i vec_5 = _mm_set1_epi32(5);$/;"	l
+vec_5	align_core.c	/^        __m512i vec_5 = _mm512_set1_epi32(5);$/;"	l
+vec_dump	align_core.c	/^        int * vec_dump = ((int *) & score);$/;"	l
+word_num	cal.h	/^    int     word_num;$/;"	m	struct:_cpu_cal_t
+word_num	cal.h	/^    int     word_num;$/;"	m	struct:_mic_cal_t
+word_num	cal.h	/^    int     word_num;$/;"	m	struct:_sse_cal_t
+word_num	cal_all.c	/^    int     word_num = cal_params->word_num;$/;"	l
+word_num	cal_all.c	/^    int     word_num;$/;"	l
+word_num	cal_cpu.c	/^    int     word_num = cal_params->word_num;$/;"	l
+word_num	cal_mic.c	/^    int     word_num = cal_params->word_num;$/;"	l
+word_num	cal_mic.c	/^    int     word_num;$/;"	l
+word_num	cal_sse.c	/^    int     word_num = cal_params->word_num;$/;"	l
+word_num	thread.c	/^    int     word_num = in_arg->word_num;$/;"	l
+word_num	thread.h	/^    int     word_num;$/;"	m	struct:_input_thread_arg
+word_sizem1	align_core.c	/^    int word_sizem1 = CPU_WORD_SIZE - 1;$/;"	l
+word_sizem1	align_core.c	/^    int word_sizem1 = MIC_WORD_SIZE - 1;$/;"	l
+word_sizem1	align_core.c	/^    int word_sizem1 = SSE_WORD_SIZE - 1;$/;"	l
+word_sizem2	align_core.c	/^                tmpbit1 >>= word_sizem2;$/;"	l
+word_sizem2	align_core.c	/^                tmpbit16 >>= word_sizem2;$/;"	l
+word_sizem2	align_core.c	/^                tmpbit2 >>= word_sizem2;$/;"	l
+word_sizem2	align_core.c	/^                tmpbit4 >>= word_sizem2;$/;"	l
+word_sizem2	align_core.c	/^                tmpbit8 >>= word_sizem2;$/;"	l
+word_sizem2	align_core.c	/^    int word_sizem2 = CPU_WORD_SIZE - 2;$/;"	l
+word_sizem2	align_core.c	/^    int word_sizem2 = SSE_WORD_SIZE - 2;$/;"	l
+write_end	cal_all.c	/^    double write_start, write_end;$/;"	l
+write_end	cal_cpu.c	/^    double write_start, write_end;$/;"	l
+write_end	cal_mic.c	/^    double write_start, write_end;$/;"	l
+write_end	cal_sse.c	/^    double write_start, write_end;$/;"	l
+write_end	thread.c	/^     double write_start, write_end;$/;"	l
+write_start	cal_all.c	/^    double write_start, write_end;$/;"	l
+write_start	cal_cpu.c	/^    double write_start, write_end;$/;"	l
+write_start	cal_mic.c	/^    double write_start, write_end;$/;"	l
+write_start	cal_sse.c	/^    double write_start, write_end;$/;"	l
+write_start	thread.c	/^     double write_start, write_end;$/;"	l
+write_total_time	cal_all.c	/^double write_total_time;$/;"	v
+write_total_time	global.h	/^extern double write_total_time;$/;"	x
