@@ -1,10 +1,10 @@
 # BGSA
-BGSA is a bit-parallel global sequence alignment toolkit for multi-core and many-core architectures. 
-
+BGSA is a bit-parallel global sequence alignment toolkit for multi-core and many-core architectures. BGSA
+supports both Myers algorithm (including the banded version) and BitPAl in order to gain fast speed of calculating unit-cost global alignments as well as global alignments with general integer scoring schemes. Furthermore, we also implement the semi-global alignment in BGSA.
 # Usage
 * Step 1: Use the _generator_ program to  generate the kernel source with your specified score and architecture. And you need the Java runtime 1.7 or higher.
 	```
-	cd Generator
+	cd generator
 	java -jar generator.jar -M 2 -I -3 -G -5 -a sse
 	```
 
