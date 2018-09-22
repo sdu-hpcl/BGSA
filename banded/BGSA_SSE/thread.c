@@ -1,3 +1,4 @@
+#include <stdarg.h>
 #include "thread.h"
 #include "file.h"
 #include "timer.h"

@@ -423,6 +423,10 @@ void cal_on_cpu() {
     fwrite(& ref_seq.count, sizeof(int64_t), 1, fp_result_info);
     fwrite(result_bucket_counts, sizeof(int64_t), read_bucket_num, fp_result_info);
     fflush(fp_result_info);*/
+	int total_temp = 0;
+    for(i = 0; i < read_bucket_num; i++) {
+        total_temp += result_bucket_counts[i];
+    }
 
     free_mem(ref_seq.content);
     free_mem(read_seq_a.content);
@@ -448,11 +452,6 @@ void cal_on_cpu() {
 
     GET_TIME(total_end);
 
-
-    int total_temp = 0;
-    for(i = 0; i < read_bucket_num; i++) {
-        total_temp += result_bucket_counts[i];
-    }
     printf("\n");
     printf("score is %d, %d, %d\n", match_score, mismatch_score, gap_score);
     printf("read_total_time  is %.2fs\n", read_total_time);

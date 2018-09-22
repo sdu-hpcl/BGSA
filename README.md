@@ -29,11 +29,16 @@ supports both Myers algorithm (including the banded version) and BitPAl in order
 	java -jar generator.jar -M 2 -I -3 -G -5 -a sse
 	```
 
-* Step 2: Move the generated file to the BGSA source folder accroding to your selected architecture, and then run `make` command.
+* Step 2: Move the generated file to the BGSA source folder accroding to your selected architecture, and then run `make` command. 
 	```
 	mv generated/align_core.c ../original/BGSA_SSE/
 	cd ../original/BGSA_SSE/
 	make
+	```
+	The default compiler is icc and CPU platform. You can pass `arch=KNL` for KNL platform and `cc=gcc` for other compilers.
+	```
+	# use gcc compiler on KNL platform
+	make arch=KNL cc=gcc
 	```
 
 * Step 3: Run a test.

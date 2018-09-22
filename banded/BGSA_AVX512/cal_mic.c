@@ -7,7 +7,6 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <unistd.h>
-#include <offload.h>
 
 #include "file.h"
 #include "thread.h"
@@ -516,6 +515,11 @@ void cal_on_mic() {
     pthread_mutex_unlock(&(output_info.lock));
     pthread_cond_signal(&(output_info.cond));
 
+    int total_temp = 0;
+    for(i = 0; i < read_bucket_num; i++) {
+        total_temp += result_bucket_counts[i];
+    }
+
     free_mem(mic_args);
     free_mem(ref_seq.content);
     free_mem(read_seq_a.content);
@@ -540,10 +544,7 @@ void cal_on_mic() {
 
     GET_TIME(total_end);
 
-    int total_temp = 0;
-    for(i = 0; i < read_bucket_num; i++) {
-        total_temp += result_bucket_counts[i];
-    }
+   
 
     printf("\n");
     printf("score is %d, %d, %d\n", match_score, mismatch_score, gap_score);

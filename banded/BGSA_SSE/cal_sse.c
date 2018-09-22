@@ -7,7 +7,6 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <unistd.h>
-#include <offload.h>
 
 #include "file.h"
 #include "thread.h"
@@ -439,6 +438,11 @@ void cal_on_sse() {
     fwrite(result_bucket_counts, sizeof(int64_t), read_bucket_num, fp_result_info);
     fflush(fp_result_info);*/
 
+    int total_temp = 0;
+    for(i = 0; i < read_bucket_num; i++) {
+        total_temp += result_bucket_counts[i];
+    }
+
     free_mem(ref_seq.content);
     free_mem(read_seq_a.content);
     free_mem(read_seq_b.content);
@@ -463,11 +467,6 @@ void cal_on_sse() {
     fclose(fp_result_info);
 
     GET_TIME(total_end);
-
-    int total_temp = 0;
-    for(i = 0; i < read_bucket_num; i++) {
-        total_temp += result_bucket_counts[i];
-    }
 
     printf("\n");
     printf("score is %d, %d, %d\n", match_score, mismatch_score, gap_score);
