@@ -10,6 +10,7 @@ supports both Myers algorithm (including the banded version) and BitPAl in order
 - [Usage](#usage)
 - [Generator](#generator)
 - [Performance](#performance)
+- [Use BGSA in your project](#use-bgsa-in-your-project)
 - [Support or Contact](#support-or-contact)
 
 <!-- tocstop -->
@@ -29,11 +30,16 @@ supports both Myers algorithm (including the banded version) and BitPAl in order
 	java -jar generator.jar -M 2 -I -3 -G -5 -a sse
 	```
 
-* Step 2: Move the generated file to the BGSA source folder accroding to your selected architecture, and then run `make` command.
+* Step 2: Move the generated file to the BGSA source folder accroding to your selected architecture, and then run `make` command. 
 	```
 	mv generated/align_core.c ../original/BGSA_SSE/
 	cd ../original/BGSA_SSE/
 	make
+	```
+	The default compiler is icc and CPU platform. You can pass `arch=KNL` for KNL platform and `cc=gcc` for other compilers.
+	```
+	# use gcc compiler on KNL platform
+	make arch=KNL cc=gcc
 	```
 
 * Step 3: Run a test.
@@ -84,6 +90,11 @@ The following figures show the performance comparison of BGSA, Parasail and SeqA
 
 ![](images/knl.png)
 > Comparison on Phi-7110 and Phi-7210
+
+## Use BGSA in your project
+You can use BGSA in your project by directly copying header and source files. For simplicity, you can first save the seqeunces to be compared into temporary files, and then call BGSA to read sequences from the temporary files, calcuate alignment scores and save them to a result file, and finally your program can read the scores from the result file. You can also modify the input and output logic for more flexible and efficient. 
+
+If you just need to use the kenerl alignment method, you can just copy `align_core.h` `align_core.c` `config.h` into your project. It is important to note that you need to process your data into the format required by this method. 
 
 ## Support or Contact
 
