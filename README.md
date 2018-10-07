@@ -94,7 +94,7 @@ The following figures show the performance comparison of BGSA, Parasail and SeqA
 ## Use BGSA in your project
 You can use BGSA in your project by directly copying header and source files. For simplicity, you can first save the seqeunces to be compared into temporary files, and then call BGSA to read sequences from the temporary files, calcuate alignment scores and save them to a result file, and finally your program can read the scores from the result file. If you want to use sequences already stored in an array, you can modify the logic in calling `get_read_from_file` and `get_ref_from_file` and change the pointer to point the existing sequence array. 
 
-If you just need to use the kernel alignment method, you need to process your data into the format required by this method. The following is a complete demo using SSE intrinsics:
+If you just want to use the kernel alignment method, you need to process your data into the format required by this method. The following is a complete demo using SSE intrinsics:
 
 > demo.c
 
