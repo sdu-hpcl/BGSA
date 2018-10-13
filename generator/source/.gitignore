@@ -1,0 +1,46 @@
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion
+
+*.iml
+
+.idea/
+
+## Plugin-specific files:
+
+# IntelliJ
+out/
+target/
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+
+*.log
+
+# gulp
+.DS_Store
+node_modules
+build
+*.node
+components
+coverage
+*.orig
+sandbox
+test/out-fixtures/*
+test/watch-*.txt
+gulp.1
+
+# bower
+npm-debug.log
+
+test/assets/package-*/
+test/assets/temp-*/
+test/reports
+test/tmp/
+
+bower_components
