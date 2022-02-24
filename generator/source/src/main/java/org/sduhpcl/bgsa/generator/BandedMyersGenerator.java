@@ -1,10 +1,8 @@
 package org.sduhpcl.bgsa.generator;
 
 import org.sduhpcl.bgsa.arch.SIMDArch;
-import org.sduhpcl.bgsa.arch.SSEArch;
 import org.sduhpcl.bgsa.util.Constants;
 import org.sduhpcl.bgsa.util.FileUtils;
-import sun.reflect.misc.FieldUtil;
 
 /**
  * @author Jikai Zhang

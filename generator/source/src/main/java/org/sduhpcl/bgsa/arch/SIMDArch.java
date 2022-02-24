@@ -1,13 +1,13 @@
 package org.sduhpcl.bgsa.arch;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import org.sduhpcl.bgsa.intrinsics.BaseIntrinsics;
-import org.sduhpcl.bgsa.generator.BaseGenerator;
-
 import java.lang.reflect.Field;
 import java.util.Map;
+
+import org.sduhpcl.bgsa.generator.BaseGenerator;
+import org.sduhpcl.bgsa.intrinsics.BaseIntrinsics;
+
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  *

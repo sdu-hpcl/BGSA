@@ -154,7 +154,7 @@ public class BitPAlGenerator extends BaseGenerator {
         String compDhMin2Mid = "comp_dh_" + getNumberName(minValue) + "_to_" + getNumberName(midValue);
         String dhMin2Mid = "dh_" + getNumberName(minValue) + "_to_" + getNumberName(midValue);
         String dhMaxOrMatch = getFieldName(maxValue, "dh_", "_or_match");
-        String dvNotMax2MidOrMatch = "dvnot" + maxValue + "to" + (midValue + 1) + "ormatch";
+        String dvNotMax2MidOrMatch = "dvnot" + getNumberName(maxValue) + "to" + getNumberName(midValue + 1) + "ormatch";
         String dvMaxShiftOrMatch = getFieldName(maxValue, "dv", "shiftormatch");
         
         
@@ -539,7 +539,7 @@ public class BitPAlGenerator extends BaseGenerator {
         String compDhMin2Mid = "comp_dh_" + getNumberName(minValue) + "_to_" + getNumberName(midValue);
         String dhMin2Mid = "dh_" + getNumberName(minValue) + "_to_" + getNumberName(midValue);
         String dhMaxOrMatch = getFieldName(maxValue, "dh_", "_or_match");
-        String dvNotMax2MidOrMatch = "dvnot" + maxValue + "to" + (midValue + 1) + "ormatch";
+        String dvNotMax2MidOrMatch = "dvnot" + getNumberName(maxValue) + "to" + getNumberName(midValue + 1) + "ormatch";
         String dvMaxShiftOrMatch = getFieldName(maxValue, "dv", "shiftormatch");
         
         List<String> strList = new ArrayList<>();
@@ -1066,7 +1066,7 @@ public class BitPAlGenerator extends BaseGenerator {
         String remainDHMin = getFieldName(minValue, "remain_dh", "");
         String dhMin2Mid = "dh" + getNumberName(minValue) + "to" + getNumberName(midValue);
         String dhMaxOrMatch = getFieldName(maxValue, "dh", "ormatch");
-        String dvNotMax2MidOrMatch = "dvnot" + maxValue + "to" + (midValue) + "ormatch";
+        String dvNotMax2MidOrMatch = "dvnot" + getNumberName(maxValue) + "to" + getNumberName(midValue) + "ormatch";
         String dvMaxShiftOrMatch = getFieldName(maxValue, "dv", "shiftormatch");
         List<String> strList = new ArrayList<>();
         int index = 1;
@@ -1395,7 +1395,7 @@ public class BitPAlGenerator extends BaseGenerator {
         String remainDHMin = getFieldName(minValue, "remain_dh", "");
         String dhMin2Mid = "dh" + getNumberName(minValue) + "to" + getNumberName(midValue);
         String dhMaxOrMatch = getFieldName(maxValue, "dh", "ormatch");
-        String dvNotMax2MidOrMatch = "dvnot" + maxValue + "to" + (midValue) + "ormatch";
+        String dvNotMax2MidOrMatch = "dvnot" + getNumberName(maxValue) + "to" + getNumberName(midValue) + "ormatch";
         String dvMaxShiftOrMatch = getFieldName(maxValue, "dv", "shiftormatch");
         List<String> strList = new ArrayList<>();
         int index = 1;
@@ -1774,7 +1774,7 @@ public class BitPAlGenerator extends BaseGenerator {
         String remainDHMin = getFieldName(minValue, "remain_dh", "");
         String dhMin2Mid = "dh" + getNumberName(minValue) + "to" + getNumberName(midValue);
         String dhMaxOrMatch = getFieldName(maxValue, "dh", "ormatch");
-        String dvNotMax2MidOrMatch = "dvnot" + maxValue + "to" + (midValue) + "ormatch";
+        String dvNotMax2MidOrMatch = "dvnot" + getNumberName(maxValue) + "to" + getNumberName(midValue) + "ormatch";
         String dvMaxShiftOrMatch = getFieldName(maxValue, "dv", "shiftormatch");
         
         fileUtils.setMarignLeft(0);
@@ -1973,7 +1973,7 @@ public class BitPAlGenerator extends BaseGenerator {
         String remainDHMin = getFieldName(minValue, "remain_dh", "");
         String dhMin2Mid = "dh" + getNumberName(minValue) + "to" + getNumberName(midValue);
         String dhMaxOrMatch = getFieldName(maxValue, "dh", "ormatch");
-        String dvNotMax2MidOrMatch = "dvnot" + maxValue + "to" + (midValue) + "ormatch";
+        String dvNotMax2MidOrMatch = "dvnot" + getNumberName(maxValue) + "to" + getNumberName(midValue) + "ormatch";
         String dvMaxShiftOrMatch = getFieldName(maxValue, "dv", "shiftormatch");
         
         fileUtils.setMarignLeft(0);
@@ -2337,7 +2337,7 @@ public class BitPAlGenerator extends BaseGenerator {
     private String getDvName(int value) {
         String string = null;
         if (value == midValue) {
-            string = "dvnot" + maxValue + "to" + (midValue + 1) + "ormatch";
+            string = "dvnot" + getNumberName(maxValue) + "to" + getNumberName(midValue + 1) + "ormatch";
         } else if (value == maxValue) {
             string = "dv" + getNumberName(value) + "shiftormatch";
         } else {
