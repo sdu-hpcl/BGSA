@@ -2,4 +2,3 @@ theme: jekyll-theme-cayman
 buttons:
   zip_url: https://github.com/sdu-hpcl/BGSA/releases/latest
   zip_title: Download
-  tar_hide: true
