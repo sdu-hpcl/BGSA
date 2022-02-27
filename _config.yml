@@ -1,5 +1,4 @@
 theme: jekyll-theme-cayman
-show_downloads: true
 buttons:
   zip_url: https://github.com/sdu-hpcl/BGSA/releases/latest
   zip_title: Download
